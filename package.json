@@ -1,0 +1,23 @@
+{
+  "name": "bubbleup",
+  "version": "2.0.0",
+  "private": true,
+  "description": "BubbleUp — a friendly real-time chat for classrooms: channels, DMs, files, polls and Thinkmas the bot.",
+  "workspaces": [
+    "server",
+    "client"
+  ],
+  "scripts": {
+    "dev": "concurrently -n server,client -c magenta,cyan \"npm:dev -w server\" \"npm:dev -w client\"",
+    "build": "npm run build -w client",
+    "start": "npm start -w server",
+    "test": "npm test -w server && npm test -w client",
+    "lint": "npm run lint -w client"
+  },
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "devDependencies": {
+    "concurrently": "^10.0.7"
+  }
+}

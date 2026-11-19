@@ -1,0 +1,13 @@
+node_modules/
+client/dist/
+data/
+*.log
+.env
+.env.*
+!.env.example
+.DS_Store
+Thumbs.db
+coverage/
+# old app (kept locally for reference)
+legacy/data/
+legacy/.env

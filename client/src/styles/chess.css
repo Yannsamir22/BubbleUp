@@ -1,0 +1,9 @@
+.sq{
+    position: relative;
+    border: 0;
+    padding: 0;
+    display: grid;
+    place-items: center;
+    cursor: default;
+    height: 37px;
+}

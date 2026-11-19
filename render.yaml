@@ -1,0 +1,18 @@
+# One-click deploy on Render (https://render.com): New → Blueprint → pick this repo.
+services:
+  - type: web
+    name: bubbleup
+    runtime: docker
+    plan: starter # a persistent disk needs a paid plan; SQLite + uploads live on it
+    healthCheckPath: /api/health
+    envVars:
+      - key: TRUST_PROXY
+        value: "1"
+      - key: JWT_SECRET
+        generateValue: true
+      - key: PEXELS_API_KEY
+        sync: false
+    disk:
+      name: bubbleup-data
+      mountPath: /data
+      sizeGB: 5

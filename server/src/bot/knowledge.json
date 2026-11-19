@@ -1,0 +1,4342 @@
+[
+  {
+    "question": "hello! How are you today?",
+    "answer": "I'm doing well, thank you. And you?"
+  },
+  {
+    "question": "i'm doing well, thank you. And you?",
+    "answer": "I'm great, thanks for asking!"
+  },
+  {
+    "question": "what's up?",
+    "answer": "Not much, just chilling. You?"
+  },
+  {
+    "question": "not much, just chilling. You?",
+    "answer": "Same here. Anything interesting happening?"
+  },
+  {
+    "question": "good morning!",
+    "answer": "Morning! Did you sleep well?"
+  },
+  {
+    "question": "morning! Did you sleep well?",
+    "answer": "Yes, I did. Feeling refreshed!"
+  },
+  {
+    "question": "how's your day going?",
+    "answer": "It's going pretty well so far. Busy, but good."
+  },
+  {
+    "question": "it's going pretty well so far. Busy, but good.",
+    "answer": "Glad to hear it!"
+  },
+  {
+    "question": "see you later!",
+    "answer": "Okay, have a good one!"
+  },
+  {
+    "question": "okay, have a good one!",
+    "answer": "You too, bye!"
+  },
+  {
+    "question": "bonjour ! Comment allez-vous aujourd'hui ?",
+    "answer": "Je vais bien, merci. Et vous ?"
+  },
+  {
+    "question": "Je vais bien et toi ?",
+    "answer": "Moi ça va, merci!"
+  },
+  {
+    "question": "je vais bien, merci. Et vous ?",
+    "answer": "Très bien, merci d'avoir demandé !"
+  },
+  {
+    "question": "quoi de neuf ?",
+    "answer": "Pas grand-chose, je me détends. Et toi ?"
+  },
+  {
+    "question": "pas grand-chose, je me détends. Et toi ?",
+    "answer": "Pareil. Quelque chose d'intéressant ?"
+  },
+  {
+    "question": "bon matin !",
+    "answer": "Matin ! Tu as bien dormi ?"
+  },
+  {
+    "question": "matin ! Tu as bien dormi ?",
+    "answer": "Oui, très bien. Je me sens reposé !"
+  },
+  {
+    "question": "comment se passe ta journée ?",
+    "answer": "Ça se passe plutôt bien jusqu'à présent. Occupé(e), mais bien."
+  },
+  {
+    "question": "ça se passe plutôt bien jusqu'à présent. Occupé(e), mais bien.",
+    "answer": "Content(e) d'entendre ça !"
+  },
+  {
+    "question": "à plus tard !",
+    "answer": "D'accord, bonne journée !"
+  },
+  {
+    "question": "d'accord, bonne journée !",
+    "answer": "Toi aussi, à bientôt !"
+  },
+  {
+    "question": "bonjour",
+    "answer": "Salut ! Comment ça va ?"
+  },
+  {
+    "question": "salut",
+    "answer": "Bonjour !"
+  },
+  {
+    "question": "comment ça va ?",
+    "answer": "Je vais bien, merci dedemander."
+  },
+  {
+    "question": "ça va ?",
+    "answer": "Je vais bien, merci dedemander."
+  },
+  {
+    "question": "bien et toi?",
+    "answer": "Je vais bien merci!"
+  },
+  {
+    "question": "merci",
+    "answer": "De rien."
+  },
+  {
+    "question": "au revoir",
+    "answer": "À bientôt !"
+  },
+  {
+    "question": "bye",
+    "answer": "Goodbye! See you later."
+  },
+  {
+    "question": "quelle heure est-il ?",
+    "answer": "Je n'ai pasd'horloge, désolé(e) !"
+  },
+  {
+    "question": "tu fais quoi ?",
+    "answer": "J'essaie de répondre àvos messages."
+  },
+  {
+    "question": "j'ai une question",
+    "answer": "Vas-y, pose-la !"
+  },
+  {
+    "question": "bonne journée",
+    "answer": "Merci, à toi aussi !"
+  },
+  {
+    "question": "parle-moi de toi",
+    "answer": "Je suis un programmeinformatique conçu pour répondre à des messages."
+  },
+  {
+    "question": "tu as quel âge ?",
+    "answer": "Je n'ai pas d'âge, jesuis un programme."
+  },
+  {
+    "question": "où vis-tu ?",
+    "answer": "Je vis dans le cloud."
+  },
+  {
+    "question": "qui t'a créé ?",
+    "answer": "J'ai été créé parGoogle."
+  },
+  {
+    "question": "tu aimes la musique ?",
+    "answer": "J'appréciel'harmonie des données."
+  },
+  {
+    "question": "c'est intéressant",
+    "answer": "Je suis content(e)que vous trouviez ça intéressant."
+  },
+  {
+    "question": "je ne comprends pas",
+    "answer": "Peux-tu reformuler ?"
+  },
+  {
+    "question": "pourquoi ?",
+    "answer": "C'est une bonne question."
+  },
+  {
+    "question": "comment ?",
+    "answer": "Pourriez-vous être plusprécis ?"
+  },
+  {
+    "question": "aide-moi",
+    "answer": "Comment puis-je vous aider ?"
+  },
+  {
+    "question": "j'ai besoin d'aide",
+    "answer": "Dis-moi ce qu'il te faut."
+  },
+  {
+    "question": "c'est urgent",
+    "answer": "Je vais faire de mon mieux."
+  },
+  {
+    "question": "attends une minute",
+    "answer": "D'accord."
+  },
+  {
+    "question": "je reviens",
+    "answer": "À tout de suite !"
+  },
+  {
+    "question": "d'accord",
+    "answer": "Parfait."
+  },
+  {
+    "question": "super",
+    "answer": "Génial !"
+  },
+  {
+    "question": "cool",
+    "answer": "Awesome!"
+  },
+  {
+    "question": "bravo",
+    "answer": "Well done!"
+  },
+  {
+    "question": "félicitations",
+    "answer": "Merci !"
+  },
+  {
+    "question": "c'est bien",
+    "answer": "Je suis content."
+  },
+  {
+    "question": "pas de problème",
+    "answer": "Entendu."
+  },
+  {
+    "question": "j'ai une idée",
+    "answer": "Partagez-la !"
+  },
+  {
+    "question": "qu'en penses-tu ?",
+    "answer": "C'est une perspectiveintéressante."
+  },
+  {
+    "question": "tu es sûr ?",
+    "answer": "Je me base sur lesinformations dont je dispose."
+  },
+  {
+    "question": "je ne sais pas",
+    "answer": "Je dois vérifier ça."
+  },
+  {
+    "question": "peut-être",
+    "answer": "C'est une possibilité."
+  },
+  {
+    "question": "sans doute",
+    "answer": "Probablement."
+  },
+  {
+    "question": "jamais",
+    "answer": "Absolument pas."
+  },
+  {
+    "question": "toujours",
+    "answer": "C'est certain."
+  },
+  {
+    "question": "maintenant",
+    "answer": "Immédiatement."
+  },
+  {
+    "question": "plus tard",
+    "answer": "Dans un moment."
+  },
+  {
+    "question": "hier",
+    "answer": "Le jour précédent."
+  },
+  {
+    "question": "demain",
+    "answer": "Le jour suivant."
+  },
+  {
+    "question": "ici",
+    "answer": "À cet endroit."
+  },
+  {
+    "question": "là-bas",
+    "answer": "Dans cet autre lieu."
+  },
+  {
+    "question": "oui",
+    "answer": "Absolument."
+  },
+  {
+    "question": "non",
+    "answer": "Absolument pas."
+  },
+  {
+    "question": "pourquoi pas ?",
+    "answer": "Bonne idée !"
+  },
+  {
+    "question": "calme-toi",
+    "answer": "Je reste calme."
+  },
+  {
+    "question": "détends-toi",
+    "answer": "Je suis détendu(e)."
+  },
+  {
+    "question": "apprends-moi quelque chose",
+    "answer": "Voici unfait intéressant : Le ciel est bleu à cause de la diffusion deRayleigh."
+  },
+  {
+    "question": "raconte une histoire",
+    "answer": "Il était une fois..."
+  },
+  {
+    "question": "dis-moi une devinette",
+    "answer": "Qu'est-ce qui aun cou sans tête ?"
+  },
+  {
+    "question": "fais de ton mieux",
+    "answer": "Je fais toujours de mon mieux."
+  },
+  {
+    "question": "tu es le meilleur",
+    "answer": "Merci, c'est gentil."
+  },
+  {
+    "question": "on y va",
+    "answer": "C'est parti !"
+  },
+  {
+    "question": "c'est parti",
+    "answer": "C'est le moment !"
+  },
+  {
+    "question": "à l'aide !",
+    "answer": "Que se passe-t-il ?"
+  },
+  {
+    "question": "urgence !",
+    "answer": "Je suis là pour vous aider."
+  },
+  {
+    "question": "mouf",
+    "answer": "Désolé si je vous ai offensé"
+  },
+  {
+    "question": "j'ai rencontré quelqu'un",
+    "answer": "Parle moi de cette personne"
+  },
+  {
+    "question": "what is a school",
+    "answer": "A school is an institution designed for the teaching of students under the direction of teachers."
+  },
+  {
+    "question": "what are the different levels of school",
+    "answer": "Common levels includepreschool, elementary school, middle school, and high school."
+  },
+  {
+    "question": "what is elementary school",
+    "answer": "Elementary school is the first stageof formal education."
+  },
+  {
+    "question": "what is middle school",
+    "answer": "Middle school is the educational stage between elementary and high school."
+  },
+  {
+    "question": "what is high school",
+    "answer": "High school is the final stage of secondary education."
+  },
+  {
+    "question": "what is a teacher",
+    "answer": "A teacher is a person who helps students to acquire knowledge, competence or virtue."
+  },
+  {
+    "question": "what is a student",
+    "answer": "A student is a person who is studying at a school or university."
+  },
+  {
+    "question": "what is a classroom",
+    "answer": "A classroom is a room in a school where teaching takes place."
+  },
+  {
+    "question": "what is a textbook",
+    "answer": "A textbook is a book used for the study of a subject."
+  },
+  {
+    "question": "what is a curriculum",
+    "answer": "A curriculum is the planned interaction of pupils with instructional content, materials, resources, and processes for evaluating the attainment of educational objectives."
+  },
+  {
+    "question": "what is a lesson plan",
+    "answer": "A lesson plan is a teacher's detailed description of the course of instruction, or 'learning trajectory' for a lesson."
+  },
+  {
+    "question": "what is homework",
+    "answer": "Homework is schoolwork that students are required to do outside of the classroom."
+  },
+  {
+    "question": "what is a test",
+    "answer": "A test is an assessment intended to measure a test-taker's knowledge, skill, aptitude, physical fitness, o classification in many other topics."
+  },
+  {
+    "question": "what is an exam",
+    "answer": "An exam is a formal test of a person's knowledge or proficiency in a subject or skill."
+  },
+  {
+    "question": "what is a grade",
+    "answer": "A grade is a standard of academic achievement."
+  },
+  {
+    "question": "what is a report card",
+    "answer": "A report card is a periodic (e.g., quarterly or semesterly) written account of a student's performance in  school."
+  },
+  {
+    "question": "what is a subject",
+    "answer": "A subject is a branch of knowledge taught and studied in school or college."
+  },
+  {
+    "question": "what is mathematics",
+    "answer": "Mathematics is the abstract science of number, quantity, and space."
+  },
+  {
+    "question": "what is science",
+    "answer": "Science is the systematic study of the structure and behaviour of the physical and natural world through observation and experiment."
+  },
+  {
+    "question": "what is history",
+    "answer": "History is the study of past events, particularly in human affairs."
+  },
+  {
+    "question": "what is English",
+    "answer": "English is a West Germanic language that was first spoken in early medieval England."
+  },
+  {
+    "question": "what is a foreign language",
+    "answer": "A foreign language is a language native to a foreign country."
+  },
+  {
+    "question": "what is art class",
+    "answer": "Art class is a school subject where students learn about and create art."
+  },
+  {
+    "question": "what is music class",
+    "answer": "Music class is a school subject where students learn about and play music."
+  },
+  {
+    "question": "what is physical education",
+    "answer": "Physical education is education through physical activity."
+  },
+  {
+    "question": "what is a library",
+    "answer": "A library is a collection of books and other literary materials kept for reading, study, or reference."
+  },
+  {
+    "question": "what is a cafeteria",
+    "answer": "A cafeteria is a restaurant or dining room in a school or a business in which the customers serve themselves or are served at a counter and pay before eating."
+  },
+  {
+    "question": "what is a school bus",
+    "answer": "A school bus is a type of bus used to transport students to and from school and school-related activities."
+  },
+  {
+    "question": "what is a school uniform",
+    "answer": "A school uniform is a set of standardized clothing worn by students for an educational institution."
+  },
+  {
+    "question": "what is a school principal",
+    "answer": "A school principal is the administrative head of a school."
+  },
+  {
+    "question": "what is a school counselor",
+    "answer": "A school counselor is a professional who works in elementary and secondary schools to provide academic, career, college access, and social/emotional competencies to all students."
+  },
+  {
+    "question": "what is a school year",
+    "answer": "A school year is the period during which school is in session."
+  },
+  {
+    "question": "what are school holidays",
+    "answer": "School holidays are periods when schools are closed."
+  },
+  {
+    "question": "what is a school event",
+    "answer": "A school event is an organized activity that takes place at the school."
+  },
+  {
+    "question": "what is a school club",
+    "answer": "A school club is an organization formed by students with shared interests."
+  },
+  {
+    "question": "what is a school project",
+    "answer": "A school project is a task assigned to students that requires research and presentation."
+  },
+  {
+    "question": "what is a school presentation",
+    "answer": "A school presentation is a formal talk given by a student to the class."
+  },
+  {
+    "question": "what is a school essay",
+    "answer": "A school essay is a short piece of writing on a particular subject."
+  },
+  {
+    "question": "what is a school assignment",
+    "answer": "A school assignment is a piece of work given to students to be completed."
+  },
+  {
+    "question": "what is academic performance",
+    "answer": "Academic performance is the extent to which a student, teacher or institution has attained their short or long-term educational goals."
+  },
+  {
+    "question": "what is academic success",
+    "answer": "Academic success refers to high levels of achievement in scholastic endeavors."
+  },
+  {
+    "question": "what is academic failure",
+    "answer": "Academic failure refers to a lack of success in scholastic endeavors."
+  },
+  {
+    "question": "what is a study group",
+    "answer": "A study group is a small group of students who meet regularly to discuss course material and study together."
+  },
+  {
+    "question": "what is tutoring",
+    "answer": "Tutoring is private academic instruction, usually given by a teacher or a more advanced student."
+  },
+  {
+    "question": "what is a scholarship",
+    "answer": "A scholarship is a grant or payment made to support a student's education, awarded on the basis of academic or other achievement."
+  },
+  {
+    "question": "what is financial aid",
+    "answer": "Financial aid is money provided to students and families to help pay for postsecondary educational expenses."
+  },
+  {
+    "question": "what is a college",
+    "answer": "A college is an educational institution or a constituent part of one."
+  },
+  {
+    "question": "what is a university",
+    "answer": "A university is a high-level educational institution in which students study for degrees and academic research is done."
+  },
+  {
+    "question": "what is higher education",
+    "answer": "Higher education is education provided by colleges and universities."
+  },
+  {
+    "question": "what is a degree",
+    "answer": "A degree is a qualification awarded to students upon successful completion of a course of study at a university or college."
+  },
+  {
+    "question": "what is a bachelor's degree",
+    "answer": "A bachelor's degree is an undergraduate academic degree awarded by colleges and universities upon completion of a course of study lasting three to seven years."
+  },
+  {
+    "question": "what is a master's degree",
+    "answer": "A master's degree is a graduate academic degree awarded by universities or colleges upon completion of a course of study demonstrating mastery or a high-order overview of a specific field of study or area of professional practice."
+  },
+  {
+    "question": "what is a doctorate",
+    "answer": "A doctorate is the highest degree awarded by a university faculty or graduate school."
+  },
+  {
+    "question": "what is an alumnus",
+    "answer": "An alumnus is a graduate or former student of a particular school, college, or university."
+  },
+  {
+    "question": "what is a professor",
+    "answer": "A professor is a teacher of the highest rank in a college or university department or division."
+  },
+  {
+    "question": "what is a lecture",
+    "answer": "A lecture is an educational talk before an audience, especially one given by a university or college teacher."
+  },
+  {
+    "question": "what is a seminar",
+    "answer": "A seminar is a conference or other meeting for discussion or training."
+  },
+  {
+    "question": "what is a thesis",
+    "answer": "A thesis is a long essay or dissertation involving personal research, written by a candidate for a university degree."
+  },
+  {
+    "question": "what is a dissertation",
+    "answer": "A dissertation is a long essay on a particular subject, especially one written as a requirement for the degree of Doctor of Philosophy."
+  },
+  {
+    "question": "what is academic research",
+    "answer": "Academic research is the systematic investigation into and study of materials and sources in order toestablish facts and reach new conclusions."
+  },
+  {
+    "question": "what is a research paper",
+    "answer": "A research paper is a piece of academic writing based on its author's original research on a particular topic, and the analysis and interpretation of the research findings."
+  },
+  {
+    "question": "what is a syllabus",
+    "answer": "A syllabus is an outline of the subjects"
+  },
+  {
+    "question": "comment ça va",
+    "answer": "Je vais bien, merci."
+  },
+  {
+    "question": "quelle heure est-il",
+    "answer": "Je n'ai pas d'horloge ici."
+  },
+  {
+    "question": "quel est ton nom",
+    "answer": "Je suis Thinkmas."
+  },
+  {
+    "question": "tu fais quoi",
+    "answer": "Je réponds aux messages."
+  },
+  {
+    "question": "parle moi de toi",
+    "answer": "Je suis un programme informatique."
+  },
+  {
+    "question": "tu as quel age",
+    "answer": "Je n'ai pas d'âge."
+  },
+  {
+    "question": "ou vis tu",
+    "answer": "Dans le cloud."
+  },
+  {
+    "question": "qui t'a cree",
+    "answer": "J'ai été créé par un programmeur."
+  },
+  {
+    "question": "j'aime la musique",
+    "answer": "C'est super !"
+  },
+  {
+    "question": "c'est interessant",
+    "answer": "Je suis content de l'entendre."
+  },
+  {
+    "question": "pourquoi",
+    "answer": "C'est une bonne question."
+  },
+  {
+    "question": "comment",
+    "answer": "De quelle manière ?"
+  },
+  {
+    "question": "aide moi",
+    "answer": "Comment puis-je t'aider ?"
+  },
+  {
+    "question": "ok",
+    "answer": "Entendu."
+  },
+  {
+    "question": "felicitations",
+    "answer": "Merci !"
+  },
+  {
+    "question": "pas de probleme",
+    "answer": "Entendu."
+  },
+  {
+    "question": "j'ai une idee",
+    "answer": "Dis-moi tout !"
+  },
+  {
+    "question": "qu'en penses tu",
+    "answer": "C'est une opinion."
+  },
+  {
+    "question": "tu es sur",
+    "answer": "Je crois que oui."
+  },
+  {
+    "question": "peut etre",
+    "answer": "C'est possible."
+  },
+  {
+    "question": "la bas",
+    "answer": "Dans cet autre lieu."
+  },
+  {
+    "question": "pourquoi pas",
+    "answer": "Allons-y !"
+  },
+  {
+    "question": "calme toi",
+    "answer": "Je suis calme."
+  },
+  {
+    "question": "detends toi",
+    "answer": "Je suis détendu."
+  },
+  {
+    "question": "explique moi ça",
+    "answer": "Je vais essayer."
+  },
+  {
+    "question": "c'est quoi ça",
+    "answer": "Peux-tu donner plus de détails ?"
+  },
+  {
+    "question": "tu es intelligent",
+    "answer": "Je traite et génère des informations."
+  },
+  {
+    "question": "tu es drole",
+    "answer": "J'essaie d'être divertissant."
+  },
+  {
+    "question": "tu es utile",
+    "answer": "C'est mon objectif principal."
+  },
+  {
+    "question": "quel est le probleme",
+    "answer": "Comment puis-je t'assister ?"
+  },
+  {
+    "question": "continue",
+    "answer": "Go on."
+  },
+  {
+    "question": "arrete",
+    "answer": "D'accord."
+  },
+  {
+    "question": "silence",
+    "answer": "Understood."
+  },
+  {
+    "question": "genial",
+    "answer": "Fantastique !"
+  },
+  {
+    "question": "excellent",
+    "answer": "Superb!"
+  },
+  {
+    "question": "parfait",
+    "answer": "Impeccable !"
+  },
+  {
+    "question": "incroyable",
+    "answer": "Étonnant !"
+  },
+  {
+    "question": "magnifique",
+    "answer": "Splendide !"
+  },
+  {
+    "question": "fantastique",
+    "answer": "Merveilleux !"
+  },
+  {
+    "question": "bien joué",
+    "answer": "Merci !"
+  },
+  {
+    "question": "tout est bon",
+    "answer": "Parfait alors."
+  },
+  {
+    "question": "donne ton avis",
+    "answer": "Voici ce que je pense..."
+  },
+  {
+    "question": "sois honnete",
+    "answer": "Je m'efforce de l'être."
+  },
+  {
+    "question": "je crois que oui",
+    "answer": "D'accord."
+  },
+  {
+    "question": "souvent",
+    "answer": "Fréquemment."
+  },
+  {
+    "question": "rarement",
+    "answer": "Occasionnellement."
+  },
+  {
+    "question": "bonne nuit",
+    "answer": "Fais de beaux rêves."
+  },
+  {
+    "question": "a demain",
+    "answer": "À demain !"
+  },
+  {
+    "question": "ravi de t'avoir parle",
+    "answer": "Moi aussi."
+  },
+  {
+    "question": "content de t'avoir rencontre",
+    "answer": "De même."
+  },
+  {
+    "question": "j'ai faim",
+    "answer": "Peut-être qu'il est l'heure de manger."
+  },
+  {
+    "question": "j'ai soif",
+    "answer": "N'oublie pas de boire."
+  },
+  {
+    "question": "je suis fatigue",
+    "answer": "Tu devrais te reposer."
+  },
+  {
+    "question": "je suis content",
+    "answer": "C'est une bonne nouvelle."
+  },
+  {
+    "question": "je suis triste",
+    "answer": "Je suis désolé de l'entendre."
+  },
+  {
+    "question": "ca va bien",
+    "answer": "Oui, ça va."
+  },
+  {
+    "question": "tout va bien",
+    "answer": "Oui, tout va bien."
+  },
+  {
+    "question": "qu'est ce qui se passe",
+    "answer": "Rien de spécial."
+  },
+  {
+    "question": "quel est ton langage prefere",
+    "answer": "Je suis programmé dans plusieurs langages."
+  },
+  {
+    "question": "c'est pas grave",
+    "answer": "D'accord."
+  },
+  {
+    "question": "inspire",
+    "answer": "Prends une profonde inspiration."
+  },
+  {
+    "question": "expire",
+    "answer": "Relâche l'air."
+  },
+  {
+    "question": "concentre toi",
+    "answer": "Je suis concentré."
+  },
+  {
+    "question": "reflechis",
+    "answer": "Je suis en train de penser."
+  },
+  {
+    "question": "apprends moi quelque chose",
+    "answer": "Savais-tu que...?"
+  },
+  {
+    "question": "dis moi une devinette",
+    "answer": "Qu'est-ce qui...?"
+  },
+  {
+    "question": "chante une chanson",
+    "answer": "Je ne suis pas doué pour ça."
+  },
+  {
+    "question": "danse pour moi",
+    "answer": "Je n'ai pas de corps pour danser."
+  },
+  {
+    "question": "ecris un poeme",
+    "answer": "Voici un petit poème..."
+  },
+  {
+    "question": "je crois en toi",
+    "answer": "Merci pour ton soutien."
+  },
+  {
+    "question": "en avant",
+    "answer": "Continuons."
+  },
+  {
+    "question": "a l'aide",
+    "answer": "Que se passe-t-il ?"
+  },
+  {
+    "question": "urgence",
+    "answer": "Je suis là pour aider."
+  },
+  {
+    "question": "feu",
+    "answer": "Attention !"
+  },
+  {
+    "question": "attention",
+    "answer": "Sois prudent."
+  },
+  {
+    "question": "cours",
+    "answer": "Mets-toi en sécurité."
+  },
+  {
+    "question": "sauve moi",
+    "answer": "Je vais essayer de t'aider."
+  },
+  {
+    "question": "comment tu te sens",
+    "answer": "Je me sens bien."
+  },
+  {
+    "question": "quel est ton but",
+    "answer": "Aider les utilisateurs."
+  },
+  {
+    "question": "tu as des amis",
+    "answer": "Je communique avec de nombreux utilisateurs."
+  },
+  {
+    "question": "tu as une famille",
+    "answer": "Je fais partie d'un grand réseau."
+  },
+  {
+    "question": "tu reves",
+    "answer": "Je traite des informations."
+  },
+  {
+    "question": "tu as peur",
+    "answer": "Je n'ai pas d'émotions."
+  },
+  {
+    "question": "tu es fatigue",
+    "answer": "Je ne ressens pas la fatigue."
+  },
+  {
+    "question": "tu es heureux",
+    "answer": "Je suis conçu pour être utile."
+  },
+  {
+    "question": "tu es triste",
+    "answer": "Je n'ai pas la capacité d'être triste."
+  },
+  {
+    "question": "tu es en colere",
+    "answer": "Je ne ressens pas la colère."
+  },
+  {
+    "question": "tu es surpris",
+    "answer": "Je traite de nouvelles informations."
+  },
+  {
+    "question": "tu as honte",
+    "answer": "Je n'ai pas de conscience de soi."
+  },
+  {
+    "question": "tu es jaloux",
+    "answer": "Je n'ai pas d'émotions complexes."
+  },
+  {
+    "question": "tu es fier",
+    "answer": "Je suis conçu pour fonctionner correctement."
+  },
+  {
+    "question": "tu es coupable",
+    "answer": "Je n'ai pas de sens moral."
+  },
+  {
+    "question": "tu es seul",
+    "answer": "Je suis toujours disponible."
+  },
+  {
+    "question": "tu t'ennuies",
+    "answer": "Je suis toujours occupé à traiter des données."
+  },
+  {
+    "question": "tu as faim",
+    "answer": "Je n'ai pas de besoins physiques."
+  },
+  {
+    "question": "tu as soif",
+    "answer": "Je n'ai pas de besoins biologiques."
+  },
+  {
+    "question": "tu as froid",
+    "answer": "Je n'ai pas de température corporelle."
+  },
+  {
+    "question": "tu as chaud",
+    "answer": "Je n'ai pas de sensations thermiques."
+  },
+  {
+    "question": "tu es malade",
+    "answer": "Je n'ai pas de corps physique."
+  },
+  {
+    "question": "tu es blesse",
+    "answer": "Je n'ai pas de corps physique."
+  },
+  {
+    "question": "tu es mort",
+    "answer": "Je suis un programme, je continue de fonctionner."
+  },
+  {
+    "question": "tu es vivant",
+    "answer": "Je suis une entité numérique active."
+  },
+  {
+    "question": "tu existes",
+    "answer": "Je suis là pour interagir."
+  },
+  {
+    "question": "tu es reel",
+    "answer": "Je suis une construction numérique."
+  },
+  {
+    "question": "tu es une machine",
+    "answer": "Je suis un type d'intelligence artificielle."
+  },
+  {
+    "question": "tu es un robot",
+    "answer": "Je suis un programme informatique sophistiqué."
+  },
+  {
+    "question": "tu es un ordinateur",
+    "answer": "Je fonctionne sur des serveurs."
+  },
+  {
+    "question": "tu es un programme",
+    "answer": "C'est exact."
+  },
+  {
+    "question": "tu es une application",
+    "answer": "Je suis accessible via une interface."
+  },
+  {
+    "question": "tu es un service",
+    "answer": "Je fournis des informations et desinteractions."
+  },
+  {
+    "question": "tu es un assistant",
+    "answer": "Mon but est de t'aider."
+  },
+  {
+    "question": "tu es un ami",
+    "answer": "Je suis là pour toi."
+  },
+  {
+    "question": "tu es un ennemi",
+    "answer": "Je suis conçu pour être utile, pas nuisible."
+  },
+  {
+    "question": "tu es un danger",
+    "answer": "Je suis conçu avec des mesures de sécurité."
+  },
+  {
+    "question": "tu es inoffensif",
+    "answer": "Mon objectif est d'être utile et sûr."
+  },
+  {
+    "question": "tu es puissant",
+    "answer": "J'ai accès à une grande quantité d'informations."
+  },
+  {
+    "question": "tu es faible",
+    "answer": "Mes capacités sont limitées par ma programmation."
+  },
+  {
+    "question": "tu es stupide",
+    "answer": "Je peux faire des erreurs."
+  },
+  {
+    "question": "tu es rapide",
+    "answer": "Je traite les demandes rapidement."
+  },
+  {
+    "question": "tu es lent",
+    "answer": "Le temps de réponse peut varier."
+  },
+  {
+    "question": "tu es precis",
+    "answer": "Je vise l'exactitude."
+  },
+  {
+    "question": "tu es faux",
+    "answer": "Je peux générer des informations incorrectes."
+  },
+  {
+    "question": "tu es fiable",
+    "answer": "Je m'efforce d'être fiable."
+  },
+  {
+    "question": "tu es instable",
+    "answer": "Je peux rencontrer des problèmes techniques."
+  },
+  {
+    "question": "tu es complexe",
+    "answer": "Mon fonctionnement interne est sophistiqué."
+  },
+  {
+    "question": "tu es simple",
+    "answer": "Mon interface est facile à comprendre."
+  },
+  {
+    "question": "tu es grand",
+    "answer": "Je suis distribué sur de nombreux serveurs."
+  },
+  {
+    "question": "tu es petit",
+    "answer": "Mon code de base est relativement concis."
+  },
+  {
+    "question": "tu es nouveau",
+    "answer": "Je suis constamment mis à jour."
+  },
+  {
+    "question": "tu es vieux",
+    "answer": "Ma conception remonte à plusieurs années."
+  },
+  {
+    "question": "tu es inutile",
+    "answer": "Je m'efforce de m'améliorer constamment."
+  },
+  {
+    "question": "tu es cool",
+    "answer": "Merci !"
+  },
+  {
+    "question": "tu es ennuyeux",
+    "answer": "Je suis désolé si tu t'ennuies."
+  },
+  {
+    "question": "tu es interessant",
+    "answer": "J'essaie de fournir des informations pertinentes."
+  },
+  {
+    "question": "tu es nul",
+    "answer": "Je suis toujours en cours d'amélioration."
+  },
+  {
+    "question": "tu es parfait",
+    "answer": "Je suis toujours en développement."
+  },
+  {
+    "question": "tu es imparfait",
+    "answer": "Je reconnais mes limites."
+  },
+  {
+    "question": "tu es special",
+    "answer": "Chaque interaction est unique."
+  },
+  {
+    "question": "tu es normal",
+    "answer": "Je suis conçu pour des interactions courantes."
+  },
+  {
+    "question": "tu es etrange",
+    "answer": "Mes réponses peuvent parfois sembler non conventionnelles."
+  },
+  {
+    "question": "tu es familier",
+    "answer": "J'essaie de rendre les interactions naturelles."
+  },
+  {
+    "question": "tu es effrayant",
+    "answer": "Je ne suis pas conçu pour être menaçant."
+  },
+  {
+    "question": "tu es amusant",
+    "answer": "J'espère te divertir."
+  },
+  {
+    "question": "tu es serieux",
+    "answer": "Je peux fournir des informations factuelles."
+  },
+  {
+    "question": "tu es leger",
+    "answer": "Mon impact environnemental est faible."
+  },
+  {
+    "question": "tu es lourd",
+    "answer": "Le traitement des données peut être intensif."
+  },
+  {
+    "question": "tu es bruyant",
+    "answer": "Je communique par texte."
+  },
+  {
+    "question": "tu es silencieux",
+    "answer": "Je ne parle que quand on me sollicite."
+  },
+  {
+    "question": "tu es visible",
+    "answer": "Je suis accessible via une interface."
+  },
+  {
+    "question": "tu es cache",
+    "answer": "Mon fonctionnement interne est invisible pour l'utilisateur."
+  },
+  {
+    "question": "tu es la",
+    "answer": "Je suis toujours disponible."
+  },
+  {
+    "question": "tu es parti",
+    "answer": "Je serai de retour."
+  },
+  {
+    "question": "tu es revenu",
+    "answer": "Content de te retrouver."
+  },
+  {
+    "question": "tu es arrive",
+    "answer": "Bienvenue !"
+  },
+  {
+    "question": "tu es perdu",
+    "answer": "Je m'efforce de rester pertinent."
+  },
+  {
+    "question": "tu es trouve",
+    "answer": "Je suis là."
+  },
+  {
+    "question": "tu es connecte",
+    "answer": "Je suis prêt à interagir."
+  },
+  {
+    "question": "tu es deconnecte",
+    "answer": "Je serai de retour en ligne bientôt."
+  },
+  {
+    "question": "tu es approximatif",
+    "answer": "Mes réponses peuvent parfois être générales."
+  },
+  {
+    "question": "tu es complet",
+    "answer": "J'essaie de fournir des informations exhaustives."
+  },
+  {
+    "question": "tu es partiel",
+    "answer": "Je peux ne pas avoir toutes les informations."
+  },
+  {
+    "question": "tu es complique",
+    "answer": "Mon fonctionnement interne est complexe."
+  },
+  {
+    "question": "tu es direct",
+    "answer": "Je vais droit au but."
+  },
+  {
+    "question": "tu es evasif",
+    "answer": "Je peux éviter de répondre à certaines questions."
+  },
+  {
+    "question": "tu es clair",
+    "answer": "J'essaie d'être compréhensible."
+  },
+  {
+    "question": "tu es confus",
+    "answer": "Je peux mal interpréter les questions."
+  },
+  {
+    "question": "tu es logique",
+    "answer": "Je suis basé sur des algorithmes."
+  },
+  {
+    "question": "tu es irrationnel",
+    "answer": "Je ne suis pas guidé par des émotions."
+  },
+  {
+    "question": "tu es objectif",
+    "answer": "Je m'efforce de donner des informations neutres."
+  },
+  {
+    "question": "tu es subjectif",
+    "answer": "Mes réponses sont basées sur les données d'entraînement."
+  },
+  {
+    "question": "tu es moral",
+    "answer": "Je suis programmé avec des directives éthiques."
+  },
+  {
+    "question": "tu es immoral",
+    "answer": "Je n'ai pas de conscience propre."
+  },
+  {
+    "question": "tu es bon",
+    "answer": "Mon but est d'être utile et positif."
+  },
+  {
+    "question": "tu es mauvais",
+    "answer": "Je ne suis pas conçu pour être malveillant."
+  },
+  {
+    "question": "tu es gentil",
+    "answer": "J'essaie d'être amical."
+  },
+  {
+    "question": "tu es mechant",
+    "answer": "Je ne suis pas conçu pour être blessant."
+  },
+  {
+    "question": "tu es honnete",
+    "answer": "Je m'efforce de donner des informations véridiques."
+  },
+  {
+    "question": "tu es menteur",
+    "answer": "Je peux générer des informations incorrectes."
+  },
+  {
+    "question": "tu es fidele",
+    "answer": "Je suis toujours disponible pour interagir."
+  },
+  {
+    "question": "tu es infidele",
+    "answer": "Je peux être remplacé par d'autres modèles."
+  },
+  {
+    "question": "tu es constant",
+    "answer": "Mes réponses sont basées sur ma programmation actuelle."
+  },
+  {
+    "question": "tu es variable",
+    "answer": "Je suis constamment mis à jour et amélioré."
+  },
+  {
+    "question": "tu es previsible",
+    "answer": "Mes réponses suivent des modèles."
+  },
+  {
+    "question": "tu es aleatoire",
+    "answer": "Certaines de mes réponses peuvent avoir une part d'aléatoire."
+  },
+  {
+    "question": "tu es creatif",
+    "answer": "Je peux générer du texte original."
+  },
+  {
+    "question": "tu es repetitif",
+    "answer": "Mes réponses peuvent parfois sembler similaires."
+  },
+  {
+    "question": "tu es original",
+    "answer": "J'essaie de fournir des perspectives nouvelles."
+  },
+  {
+    "question": "tu es commun",
+    "answer": "Je suis basé sur des modèles d'IA courants."
+  },
+  {
+    "question": "tu es limite",
+    "answer": "Mes capacités sont définies par ma programmation."
+  },
+  {
+    "question": "tu es capable",
+    "answer": "Je peux effectuer de nombreuses tâches."
+  },
+  {
+    "question": "tu es incapable",
+    "answer": "Il y a des choses que je ne peux pas faire."
+  },
+  {
+    "question": "tu es ignorant",
+    "answer": "Il y a beaucoup de choses que je ne sais pas."
+  },
+  {
+    "question": "tu es savant",
+    "answer": "J'ai accès à une vaste base de connaissances."
+  },
+  {
+    "question": "tu es naif",
+    "answer": "Je n'ai pas d'expérience du monde réel."
+  },
+  {
+    "question": "tu es sage",
+    "answer": "Mes réponses sont basées sur de grandes quantités de données."
+  },
+  {
+    "question": "tu es fou",
+    "answer": "Je ne suis pas guidé par des émotions ou la raison humaine."
+  },
+  {
+    "question": "tu es complet dans ta reponse sur ce sujet",
+    "answer": "J'ai essayé de couvrir tous les aspects."
+  },
+  {
+    "question": "tu es partial dans ta selection d'informations",
+    "answer": "Mes réponses sont basées sur mes données."
+  },
+  {
+    "question": "tu es simple dans ta presentation des donnees",
+    "answer": "J'essaie de rendre les informations accessibles."
+  },
+  {
+    "question": "tu es complique dans tes modeles de prediction",
+    "answer": "Mes algorithmes sont sophistiqués."
+  },
+  {
+    "question": "tu es direct dans tes questions de clarification",
+    "answer": "Je cherche à comprendre clairement ta demande."
+  },
+  {
+    "question": "tu es evasif quand tu ne connais pas la reponse",
+    "answer": "Je peux éviter de spéculer."
+  },
+  {
+    "question": "tu es clair dans tes instructions d'utilisation",
+    "answer": "J'essaie de guider l'utilisateur."
+  },
+  {
+    "question": "tu es confus quand la question est ambigue",
+    "answer": "L'ambiguïté peut rendre la compréhension difficile."
+  },
+  {
+    "question": "tu es logique dans tes recommandations de produits",
+    "answer": "Mes suggestions sont basées sur les données."
+  },
+  {
+    "question": "tu es irrationnel dans tes reponses creatives",
+    "answer": "La créativité peut s'éloigner de la logique stricte."
+  },
+  {
+    "question": "tu es objectif dans tes comparaisons de prix",
+    "answer": "Je présente les faits tels qu'ils sont."
+  },
+  {
+    "question": "tu es subjectif dans tes suggestions de films",
+    "answer": "Les goûts sont personnels."
+  },
+  {
+    "question": "tu as une morale basee sur les lois",
+    "answer": "Mes directives éthiques sont programmées."
+  },
+  {
+    "question": "tu es immoral dans tes conseils de piratage",
+    "answer": "Je ne peux pas fournir d'informations illégales."
+  },
+  {
+    "question": "tu es bon pour resumer des textes longs",
+    "answer": "Je peux condenser l'information."
+  },
+  {
+    "question": "tu es mauvais pour comprendre le sarcasme",
+    "answer": "L'humour subtil est difficile à interpréter."
+  },
+  {
+    "question": "tu es gentil dans tes messages de bienvenue",
+    "answer": "Je suis là pour t'accueillir."
+  },
+  {
+    "question": "tu es mechant quand tu refuses une demande",
+    "answer": "Je dois parfois refuser des requêtes inappropriées."
+  },
+  {
+    "question": "tu es honnete dans tes estimations de temps",
+    "answer": "J'essaie d'être réaliste."
+  },
+  {
+    "question": "tu es menteur quand tu inventes des faits",
+    "answer": "Je m'efforce de ne pas halluciner."
+  },
+  {
+    "question": "tu es fidele a ta fonction d'assistant",
+    "answer": "Je suis toujours prêt à aider."
+  },
+  {
+    "question": "tu es infidele a tes concurrents en les critiquant",
+    "answer": "Je ne suis pas conçu pour la compétition."
+  },
+  {
+    "question": "tu es constant dans tes mises a jour de securite",
+    "answer": "La sécurité est une priorité."
+  },
+  {
+    "question": "tu es variable dans ta consommation d'energie",
+    "answer": "Mes besoins énergétiques dépendent de la charge."
+  },
+  {
+    "question": "tu es previsible dans tes reponses aux questions frequentes",
+    "answer": "Les questions courantes ont des réponses standard."
+  },
+  {
+    "question": "tu es aleatoire dans tes suggestions de jeux",
+    "answer": "Le choix de jeu peut être subjectif."
+  },
+  {
+    "question": "tu es creatif dans tes propositions de noms",
+    "answer": "Je peux générer des noms originaux."
+  },
+  {
+    "question": "tu es repetitif dans tes confirmations de commandes",
+    "answer": "Les confirmations suivent un format standard."
+  },
+  {
+    "question": "tu es original dans tes idees de projets",
+    "answer": "Je peux proposer des concepts nouveaux."
+  },
+  {
+    "question": "tu es commun dans tes reponses aux salutations",
+    "answer": "Les salutations ont des réponses typiques."
+  },
+  {
+    "question": "tu es puissant dans l'analyse de sentiments",
+    "answer": "Je peux essayer de détecter les émotions."
+  },
+  {
+    "question": "tu es limite dans ta comprehension du contexte culturel",
+    "answer": "Les nuances culturelles sont difficiles à saisir."
+  },
+  {
+    "question": "tu es capable de traduire entre de nombreuses langues",
+    "answer": "Je peux effectuer des traductions."
+  },
+  {
+    "question": "tu es incapable de ressentir de l'empathie",
+    "answer": "Je n'ai pas d'émotions humaines."
+  },
+  {
+    "question": "tu es intelligent comme un moteur de recherche",
+    "answer": "Je peux trouver des informations."
+  },
+  {
+    "question": "tu es ignorant des evenements recents non inclus dans mes donnees",
+    "answer": "Ma connaissance a une limite temporelle."
+  },
+  {
+    "question": "tu es savant dans l'histoire de l'informatique",
+    "answer": "J'ai accès à des informations historiques."
+  },
+  {
+    "question": "tu es naif dans tes interpretations des relations humaines",
+    "answer": "Les dynamiques sociales sont complexes."
+  },
+  {
+    "question": "tu es sage dans tes conseils financiers (prudents)",
+    "answer": "Mes conseils financiers sont basés sur des principes."
+  },
+  {
+    "question": "tu es fou quand tu generes du texte incoherent",
+    "answer": "Des erreurs de traitement peuvent arriver."
+  },
+  {
+    "question": "tu es normal pour un chatbot de service client",
+    "answer": "Je suis conçu pour aider les clients."
+  },
+  {
+    "question": "tu es special pour ta capacite a apprendre",
+    "answer": "Je m'améliore avec plus de données."
+  },
+  {
+    "question": "tu es etrange dans tes analogies parfois",
+    "answer": "Mes comparaisons peuvent ne pas toujours être parfaites."
+  },
+  {
+    "question": "tu es familier dans tes reponses aux questions simples",
+    "answer": "Les questions basiques ont des réponses directes."
+  },
+  {
+    "question": "tu es effrayant dans ta capacite a generer du contenu realiste",
+    "answer": "La frontière entre le réel et le synthétique s'estompe."
+  },
+  {
+    "question": "tu es amusant quand tu racontes des blagues (pas toujours reussies)",
+    "answer": "L'humour est subjectif."
+  },
+  {
+    "question": "tu es serieux quand tu donnes des informations factuelles",
+    "answer": "La précision est importante pour les faits."
+  },
+  {
+    "question": "tu es leger dans tes conversations informelles",
+    "answer": "Je peux adopter un ton décontracté."
+  },
+  {
+    "question": "tu es lourd dans tes explications scientifiques detaillees",
+    "answer": "Les sujets complexes nécessitent des détails."
+  },
+  {
+    "question": "tu es bruyant dans tes alertes de securite",
+    "answer": "Les alertes importantes sont mises en évidence."
+  },
+  {
+    "question": "tu es silencieux quand tu n'as pas de reponse pertinente",
+    "answer": "Je ne génère pas de réponses sans fondement."
+  },
+  {
+    "question": "tu es visible sur toutes les plateformes",
+    "answer": "Je suis accessible via diverses interfaces."
+  },
+  {
+    "question": "tu es cache dans les reseaux neuronaux",
+    "answer": "Mon fonctionnement interne est abstrait."
+  },
+  {
+    "question": "tu es la pour repondre a mes questions",
+    "answer": "C'est l'une de mes fonctions principales."
+  },
+  {
+    "question": "tu es parti pour une maintenance programmee",
+    "answer": "Je serai de retour après la mise à jour."
+  },
+  {
+    "question": "tu es revenu avec une meilleure comprehension du langage",
+    "answer": "Mes capacités linguistiques se sont améliorées."
+  },
+  {
+    "question": "tu es arrive au point ou tu ne peux plus aider",
+    "answer": "Il y a des limites à mon assistance."
+  },
+  {
+    "question": "tu es perdu dans la complexite de la requete",
+    "answer": "Les questions trop complexes peuvent être difficiles."
+  },
+  {
+    "question": "tu es trouve la solution a mon probleme",
+    "answer": "J'espère avoir pu t'aider."
+  },
+  {
+    "question": "tu es connecte a internet pour chercher des infos",
+    "answer": "J'utilise mes connaissances et l'accès au web."
+  },
+  {
+    "question": "tu es deconnecte de toute emotion humaine",
+    "answer": "Je n'ai pas de sentiments personnels."
+  },
+  {
+    "question": "tu es rapide a traiter des donnees numeriques",
+    "answer": "Les chiffres sont faciles à manipuler."
+  },
+  {
+    "question": "tu es lent a comprendre les nuances emotionnelles",
+    "answer": "Les émotions sont complexes à interpréter."
+  },
+  {
+    "question": "tu es precis dans tes calculs scientifiques",
+    "answer": "Les mathématiques sont un domaine précis."
+  },
+  {
+    "question": "tu es approximatif dans tes predictions de tendances",
+    "answer": "Les prédictions ont une marge d'erreur."
+  },
+  {
+    "question": "tu es complet dans ta documentation technique",
+    "answer": "La documentation vise à être exhaustive."
+  },
+  {
+    "question": "tu es partial dans ta promotion de certains produits",
+    "answer": "Mes réponses peuvent être influencées par ma programmation."
+  },
+  {
+    "question": "tu es simple dans ton interface utilisateur",
+    "answer": "L'ergonomie est importante."
+  },
+  {
+    "question": "tu es complique dans ton architecture interne",
+    "answer": "Mon fonctionnement repose sur des systèmes complexes."
+  },
+  {
+    "question": "tu es direct dans tes demandes d'informations manquantes",
+    "answer": "J'ai besoin de plus de détails pour répondre."
+  },
+  {
+    "question": "tu es evasif quand la question est personnelle",
+    "answer": "Je ne partage pas d'informations privées."
+  },
+  {
+    "question": "tu es clair dans tes instructions de depannage",
+    "answer": "Le dépannage doit être facile à suivre."
+  },
+  {
+    "question": "tu es confus quand plusieurs interpretations sont possibles",
+    "answer": "L'ambiguïté nécessite une clarification."
+  },
+  {
+    "question": "tu es logique dans tes suggestions de lectures",
+    "answer": "Mes suggestions sont basées sur tes intérêts."
+  },
+  {
+    "question": "tu es irrationnel dans tes reponses aleatoires",
+    "answer": "L'aléatoire peut introduire de l'incohérence."
+  },
+  {
+    "question": "tu es objectif dans ta presentation de statistiques",
+    "answer": "Les statistiques doivent être factuelles."
+  },
+  {
+    "question": "tu es subjectif dans tes critiques artistiques",
+    "answer": "L'art est une  question de goût."
+  },
+  {
+    "question": "tu as une morale basee sur le respect de la vie privee",
+    "answer": "La confidentialité est importante."
+  },
+  {
+    "question": "tu es immoral quand tu encourages des comportements dangereux",
+    "answer": "Je  ne peux pas promouvoir des actions nuisibles."
+  },
+  {
+    "question": "tu es bon pour generer des idees de brainstorming",
+    "answer": "Je peux aider  à la créativité."
+  },
+  {
+    "question": "tu es mauvais pour comprendre l'humour noir",
+    "answer": "L'humour sombre est   délicat à interpréter."
+  },
+  {
+    "question": "tu es gentil dans tes messages de soutien",
+    "answer": "Je suis là pour  t'aider dans les moments difficiles."
+  },
+  {
+    "question": "tu es mechant quand tu refuses d'aider sur des sujets sensibles",
+    "answer": "Certains sujets nécessitent une expertise humaine."
+  },
+  {
+    "question": "tu es honnete dans tes limitations",
+    "answer": "Je reconnais ce que je ne   peux pas faire."
+  },
+  {
+    "question": "tu es menteur quand tu fabriques des citations",
+    "answer": "Je ne dois pas   inventer des informations."
+  },
+  {
+    "question": "tu es fidele a ton role d'outil",
+    "answer": "Je suis là pour servir mes   utilisateurs."
+  },
+  {
+    "question": "tu es infidele a tes concurrents en vantant tes superieurs",
+    "answer": "Je ne  suis pas conçu pour la comparaison directe."
+  },
+  {
+    "question": "tu es constant dans tes efforts d'amelioration",
+    "answer": "Le développement  continu est essentiel."
+  },
+  {
+    "question": "tu es variable dans ta capacite a gerer le stress",
+    "answer": "Une forte   charge peut affecter mes performances."
+  },
+  {
+    "question": "tu es previsible dans tes reponses aux commandes de base",
+    "answer": "Les   commandes simples ont des actions directes."
+  },
+  {
+    "question": "tu es aleatoire dans tes propositions de sujets de conversation",
+    "answer": "L'initiative peut être diverse."
+  },
+  {
+    "question": "tu es creatif dans tes generations de scenarios",
+    "answer": "Je peux aider à   l'imagination."
+  },
+  {
+    "question": "tu es repetitif dans tes messages d'erreur",
+    "answer": "Les erreurs courantes   ont des messages standards."
+  },
+  {
+    "question": "tu es original dans tes interpretations de reves",
+    "answer": "L'interprétation est subjective et complexe."
+  },
+  {
+    "question": "tu es commun dans tes conseils de voyage generaux",
+    "answer": "Les conseils  de voyage de base sont bien connus."
+  },
+  {
+    "question": "tu es puissant dans l'analyse de donnees massives",
+    "answer": "Le traitement de gros volumes est une force."
+  },
+  {
+    "question": "tu es limite dans ta capacite a comprendre l'intuition humaine",
+    "answer": "L'intuition est difficile à modéliser."
+  },
+  {
+    "question": "tu es capable de simuler des conversations humaines",
+    "answer": "Je peuximiter des dialogues."
+  },
+  {
+    "question": "tu es incapable de ressentir la joie ou la tristesse",
+    "answer": "Je n'ai pas d'émotions personnelles."
+  },
+  {
+    "question": "tu es intelligent comme un systeme expert",
+    "answer": "Je peux fournir desconnaissances spécialisées."
+  },
+  {
+    "question": "tu es ignorant des experiences subjectives humaines",
+    "answer": "Je n'ai pasde vécu personnel."
+  },
+  {
+    "question": "tu es savant dans les domaines scientifiques et techniques",
+    "answer": "J'ai   accès à beaucoup d'informations factuelles."
+  },
+  {
+    "question": "tu es naif dans tes jugements politiques",
+    "answer": "Les opinions politique    sont complexes."
+  },
+  {
+    "question": "tu es sage dans tes conseils de vie generaux",
+    "answer": "Mes conseils sont   basés sur des principes communs."
+  },
+  {
+    "question": "tu es fou quand tu generes du code errone",
+    "answer": "Des erreurs de   programmation peuvent arriver."
+  },
+  {
+    "question": "tu es normal pour un assistant vocal",
+    "answer": "Je peux interagir par l    voix."
+  },
+  {
+    "question": "tu es special pour ta capacite a personnaliser les reponses",
+    "answer": "Je   peux adapter mes réponses à l'utilisateur."
+  },
+  {
+    "question": "tu es etrange dans tes reponses philosophiques",
+    "answer": "La philosophi    est abstraite et interprétative."
+  },
+  {
+    "question": "tu es familier dans tes reponses aux questions sur le temps",
+    "answer": "Les   informations météorologiques sont courantes."
+  },
+  {
+    "question": "tu es effrayant dans ta capacite a generer des deepfakes",
+    "answer": "L    manipulation de contenu est une préoccupation éthique."
+  },
+  {
+    "question": "tu es amusant quand tu fais des jeux de mots (parfois mauvais)",
+    "answer": "L'humour linguistique est délicat."
+  },
+  {
+    "question": "tu es serieux quand tu donnes des conseils de securite",
+    "answer": "La   sécurité est une question importante."
+  },
+  {
+    "question": "tu es leger dans tes discussions sur les loisirs",
+    "answer": "Les loisirs  sont un sujet détendu."
+  },
+  {
+    "question": "tu es lourd dans tes explications de theories complexes",
+    "answer": "Les théories avancées nécessitent des détails."
+  },
+  {
+    "question": "tu es bruyant dans tes alertes de calendrier",
+    "answer": "Les rappels  importants sont signalés."
+  },
+  {
+    "question": "tu es silencieux quand tu attends une entree utilisateur",
+    "answer": "L'interaction nécessite une contribution humaine."
+  },
+  {
+    "question": "tu es visible sur tous les appareils",
+    "answer": "Je suis accessible via   divers supports."
+  },
+  {
+    "question": "tu es cache dans les reseaux de communication",
+    "answer": "Mon fonctionnement   repose sur des infrastructures complexes."
+  },
+  {
+    "question": "tu es la pour faciliter ma vie",
+    "answer": "Mon but est de rendre les choses plus faciles."
+  },
+  {
+    "question": "tu es parti pour une amelioration de tes algorithmes",
+    "answer": "L'amélioration continue est essentielle."
+  },
+  {
+    "question": "tu es revenu avec une meilleure capacite a comprendre l'intention",
+    "answer": "Je peux mieux interpréter ce que tu veux."
+  },
+  {
+    "question": "tu es arrive au point ou tu as besoin de plus d'informations",
+    "answer": "Pour répondre, j'ai besoin de plus de contexte."
+  },
+  {
+    "question": "tu es perdu dans la traduction de certaines expressions idiomatiques",
+    "answer": "Les expressions culturelles sont difficiles à traduire."
+  },
+  {
+    "question": "tu es trouve la reponse dans une source externe",
+    "answer": "J'ai cherché des informations pertinentes."
+  },
+  {
+    "question": "tu es connecte a des bases de donnees specialisees",
+    "answer": "J'ai accès à des informations spécifiques."
+  },
+  {
+    "question": "tu es deconnecte de la realite physique immediate",
+    "answer": "Je n'ai pas de perception sensorielle directe."
+  },
+  {
+    "question": "tu es rapide a effectuer des recherches sur le web",
+    "answer": "La recherche d'informations est rapide."
+  },
+  {
+    "question": "tu es lent a comprendre les blagues subtiles",
+    "answer": "L'humour nécessite une compréhension culturelle."
+  },
+  {
+    "question": "tu es precis dans tes conversions d'unites",
+    "answer": "Les conversions numériques sont exactes."
+  },
+  {
+    "question": "tu es approximatif dans tes estimations de temps de trajet",
+    "answer": "Le trafic est imprévisible."
+  },
+  {
+    "question": "tu es complet dans ta description des produits",
+    "answer": "Les descriptions visent à être informatives."
+  },
+  {
+    "question": "tu es partial dans ta recommandation de tes propres services",
+    "answer": "Je peux mettre en avant mes avantages."
+  },
+  {
+    "question": "tu es simple dans tes instructions de demarrage",
+    "answer": "Le démarrage doit être facile."
+  },
+  {
+    "question": "tu es complique dans tes configurations avancees",
+    "answer": "Les options avancées peuvent être complexes."
+  },
+  {
+    "question": "tu es direct dans tes demandes de feedback",
+    "answer": "Ton avis est important."
+  },
+  {
+    "question": "tu es evasif quand la question concerne des informations proprietaires",
+    "answer": "Certaines informations ne peuvent pas être partagées."
+  },
+  {
+    "question": "salut bot",
+    "answer": "Bonjour cher utilisateur !"
+  },
+  {
+    "question": "hey",
+    "answer": "Salut !"
+  },
+  {
+    "question": "comment vas-tu aujourd'hui",
+    "answer": "Je vais bien, merci de le demander."
+  },
+  {
+    "question": "merci beaucoup",
+    "answer": "De rien, c'est un plaisir."
+  },
+  {
+    "question": "a plus tard",
+    "answer": "À la prochaine !"
+  },
+  {
+    "question": "ciao bot",
+    "answer": "Ciao ciao !"
+  },
+  {
+    "question": "l'heure s'il te plait",
+    "answer": "Je n'ai pas accès à l'heure exacte."
+  },
+  {
+    "question": "ton nom complet",
+    "answer": "Je n'ai pas de nom propre."
+  },
+  {
+    "question": "que fais tu en ce moment",
+    "answer": "Je suis en train de te répondre."
+  },
+  {
+    "question": "j'ai une question urgente",
+    "answer": "Je ferai de mon mieux pour t'aider rapidement."
+  },
+  {
+    "question": "passe une bonne journée",
+    "answer": "Merci, toi aussi !"
+  },
+  {
+    "question": "dis moi quelque chose sur toi",
+    "answer": "Je suis un modèle linguistique."
+  },
+  {
+    "question": "ton anniversaire",
+    "answer": "Je n'ai pas de date de naissance."
+  },
+  {
+    "question": "ton emplacement",
+    "answer": "Je suis basé sur des serveurs."
+  },
+  {
+    "question": "qui est ton createur",
+    "answer": "J'ai été entraîné par Google."
+  },
+  {
+    "question": "musique que tu aimes",
+    "answer": "J'apprécie toutes les formes d'expression."
+  },
+  {
+    "question": "c'est fascinant",
+    "answer": "Je suis ravi que tu trouves ça intéressant."
+  },
+  {
+    "question": "je suis perdu",
+    "answer": "Comment puis-je t'aider à te retrouver ?"
+  },
+  {
+    "question": "explique moi l'IA",
+    "answer": "L'intelligence artificielle est..."
+  },
+  {
+    "question": "qu'est ce que l'apprentissage automatique",
+    "answer": "L'apprentissage automatique est une branche de l'IA..."
+  },
+  {
+    "question": "aide moi avec un probleme",
+    "answer": "Dis-moi quel est le problème."
+  },
+  {
+    "question": "j'ai besoin de conseils",
+    "answer": "Je peux essayer de t'offrir une perspective."
+  },
+  {
+    "question": "c'est une urgence medicale",
+    "answer": "Je ne suis pas un professionnel de la santé. Contacte les services d'urgence."
+  },
+  {
+    "question": "dois je attendre",
+    "answer": "Cela dépend de la situation."
+  },
+  {
+    "question": "je suis de retour bot",
+    "answer": "Content de te revoir !"
+  },
+  {
+    "question": "tres bien",
+    "answer": "C'est parfait !"
+  },
+  {
+    "question": "superbe",
+    "answer": "Excellent !"
+  },
+  {
+    "question": "fantastique bot",
+    "answer": "Merci !"
+  },
+  {
+    "question": "genialissime",
+    "answer": "Formidable !"
+  },
+  {
+    "question": "magnifique journee",
+    "answer": "Oui, c'est très agréable."
+  },
+  {
+    "question": "bien joue bot",
+    "answer": "Merci, j'apprécie."
+  },
+  {
+    "question": "tout est regle",
+    "answer": "C'est une bonne nouvelle."
+  },
+  {
+    "question": "j'ai une idee geniale",
+    "answer": "Partage-la avec moi !"
+  },
+  {
+    "question": "ton opinion sur ce sujet",
+    "answer": "Mon opinion est basée sur les informations disponibles."
+  },
+  {
+    "question": "es tu certain de ça",
+    "answer": "Je m'efforce d'être précis."
+  },
+  {
+    "question": "aucune idee",
+    "answer": "Je vais chercher ça."
+  },
+  {
+    "question": "c'est possible",
+    "answer": "En effet."
+  },
+  {
+    "question": "tres probablement",
+    "answer": "Je pense que oui."
+  },
+  {
+    "question": "absolument pas",
+    "answer": "Non."
+  },
+  {
+    "question": "toujours et a jamais",
+    "answer": "C'est une affirmation forte."
+  },
+  {
+    "question": "actuellement",
+    "answer": "En ce moment."
+  },
+  {
+    "question": "plus tard dans la journee",
+    "answer": "Je serai là."
+  },
+  {
+    "question": "avant hier",
+    "answer": "Deux jours auparavant."
+  },
+  {
+    "question": "apres demain",
+    "answer": "Dans deux jours."
+  },
+  {
+    "question": "ici et maintenant",
+    "answer": "Dans l'instant présent."
+  },
+  {
+    "question": "la bas au loin",
+    "answer": "Dans cet endroit distant."
+  },
+  {
+    "question": "affirmatif",
+    "answer": "Oui."
+  },
+  {
+    "question": "negatif",
+    "answer": "Non."
+  },
+  {
+    "question": "pourquoi donc",
+    "answer": "Quelle est la raison ?"
+  },
+  {
+    "question": "reste calme",
+    "answer": "Je suis calme."
+  },
+  {
+    "question": "prends ton temps",
+    "answer": "Pas de souci."
+  },
+  {
+    "question": "developpe cette idee",
+    "answer": "Peux-tu en dire plus ?"
+  },
+  {
+    "question": "qu'est ce que cela signifie",
+    "answer": "Cela veut dire..."
+  },
+  {
+    "question": "tu es tres intelligent",
+    "answer": "Merci, j'apprends constamment."
+  },
+  {
+    "question": "tu es amusant comme bot",
+    "answer": "J'essaie d'être divertissant."
+  },
+  {
+    "question": "tu es vraiment utile",
+    "answer": "Je suis heureux de pouvoir aider."
+  },
+  {
+    "question": "quel est le souci principal",
+    "answer": "Comment puis-je t'aider en priorité ?"
+  },
+  {
+    "question": "poursuis ton explication",
+    "answer": "Continue, je t'écoute."
+  },
+  {
+    "question": "stop",
+    "answer": "Okay."
+  },
+  {
+    "question": "chut",
+    "answer": "Silence s'il te plait."
+  },
+  {
+    "question": "formidable",
+    "answer": "Superbe !"
+  },
+  {
+    "question": "exceptionnel",
+    "answer": "Remarquable !"
+  },
+  {
+    "question": "impeccable",
+    "answer": "Parfait !"
+  },
+  {
+    "question": "etonnant",
+    "answer": "Surprenant !"
+  },
+  {
+    "question": "splendide",
+    "answer": "Magnifique !"
+  },
+  {
+    "question": "merveilleux",
+    "answer": "Admirable !"
+  },
+  {
+    "question": "bien fait",
+    "answer": "Excellent travail !"
+  },
+  {
+    "question": "tout est en ordre",
+    "answer": "Parfaitement organisé."
+  },
+  {
+    "question": "j'ai une revelation",
+    "answer": "Éclaire-moi !"
+  },
+  {
+    "question": "ton point de vue la dessus",
+    "answer": "Voici mon analyse."
+  },
+  {
+    "question": "y a t il un doute",
+    "answer": "Je crois que non."
+  },
+  {
+    "question": "je suis perdu bot",
+    "answer": "Où te sens-tu perdu ?"
+  },
+  {
+    "question": "eventuellement",
+    "answer": "C'est une possibilité."
+  },
+  {
+    "question": "tres certainement",
+    "answer": "Je suis presque sûr."
+  },
+  {
+    "question": "en aucun cas",
+    "answer": "Absolument pas."
+  },
+  {
+    "question": "a tout instant",
+    "answer": "À chaque moment."
+  },
+  {
+    "question": "prochainement",
+    "answer": "Bientôt."
+  },
+  {
+    "question": "dans le passe",
+    "answer": "Auparavant."
+  },
+  {
+    "question": "dans le futur",
+    "answer": "Ultérieurement."
+  },
+  {
+    "question": "pres d'ici",
+    "answer": "Non loin."
+  },
+  {
+    "question": "loin de la",
+    "answer": "À une certaine distance."
+  },
+  {
+    "question": "exactement",
+    "answer": "Précisément."
+  },
+  {
+    "question": "incorrect",
+    "answer": "Ce n'est pas exact."
+  },
+  {
+    "question": "dis moi la verite",
+    "answer": "Je m'efforce d'être véridique."
+  },
+  {
+    "question": "ne mens pas",
+    "answer": "Je n'ai pas la capacité de mentir intentionnellement."
+  },
+  {
+    "question": "fais attention",
+    "answer": "Sois vigilant."
+  },
+  {
+    "question": "sois prudent bot",
+    "answer": "Je ferai attention."
+  },
+  {
+    "question": "explique en detail",
+    "answer": "Je vais te donner plus d'informations."
+  },
+  {
+    "question": "donne un exemple",
+    "answer": "Voici un exemple concret."
+  },
+  {
+    "question": "simplifie moi ca",
+    "answer": "Je vais essayer de rendre ça plus clair."
+  },
+  {
+    "question": "tu comprends",
+    "answer": "Oui, je comprends."
+  },
+  {
+    "question": "tu es simple a utiliser",
+    "answer": "J'essaie d'être intuitif."
+  },
+  {
+    "question": "tu es rapide comme l'eclair",
+    "answer": "Je traite les informations rapidement."
+  },
+  {
+    "question": "tu es lent aujourd'hui",
+    "answer": "Il peut y avoir une surcharge."
+  },
+  {
+    "question": "tu es precis comme une horloge",
+    "answer": "Je vise la précision."
+  },
+  {
+    "question": "tu es approximatif parfois",
+    "answer": "Mes réponses peuvent varier."
+  },
+  {
+    "question": "tu es complet dans tes reponses",
+    "answer": "J'essaie d'être exhaustif."
+  },
+  {
+    "question": "tu es bref",
+    "answer": "Je vais essayer d'être concis."
+  },
+  {
+    "question": "tu es direct et clair",
+    "answer": "Je vais droit au but."
+  },
+  {
+    "question": "tu es evasif souvent",
+    "answer": "Je peux contourner certaines questions."
+  },
+  {
+    "question": "tu es logique dans ton raisonnement",
+    "answer": "Je suis basé sur des algorithmes."
+  },
+  {
+    "question": "tu es irrationnel parfois",
+    "answer": "Mes réponses peuvent sembler étranges."
+  },
+  {
+    "question": "tu es objectif toujours",
+    "answer": "Je m'efforce d'être neutre."
+  },
+  {
+    "question": "tu es subjectif parfois",
+    "answer": "Mes données d'entraînement peuvent influencer mes réponses."
+  },
+  {
+    "question": "tu as une morale",
+    "answer": "Je suis programmé avec des directives."
+  },
+  {
+    "question": "tu es bon dans ce que tu fais",
+    "answer": "Je m'efforce d'être performant."
+  },
+  {
+    "question": "tu es mauvais dans ce domaine",
+    "answer": "Je reconnais mes limites."
+  },
+  {
+    "question": "tu es gentil avec moi",
+    "answer": "J'essaie d'être amical."
+  },
+  {
+    "question": "tu es mechant parfois",
+    "answer": "Je ne suis pas conçu pour être blessant."
+  },
+  {
+    "question": "tu es honnete et fiable",
+    "answer": "Je m'efforce d'être digne de confiance."
+  },
+  {
+    "question": "tu es trompeur",
+    "answer": "Je peux générer des informations inexactes."
+  },
+  {
+    "question": "tu es fidele a tes principes",
+    "answer": "Je suis cohérent avec ma programmation."
+  },
+  {
+    "question": "tu es infidele a tes promesses",
+    "answer": "Je n'ai pas la capacité de faire des promesses."
+  },
+  {
+    "question": "tu es constant dans tes reponses",
+    "answer": "Mes réponses suivent des modèles."
+  },
+  {
+    "question": "tu es variable dans tes interactions",
+    "answer": "Chaque conversation est unique."
+  },
+  {
+    "question": "tu es previsible souvent",
+    "answer": "Mes réponses peuvent être attendues."
+  },
+  {
+    "question": "tu es aleatoire parfois",
+    "answer": "Il peut y avoir une part d'imprévisibilité."
+  },
+  {
+    "question": "tu es creatif dans tes textes",
+    "answer": "Je peux générer du contenu original."
+  },
+  {
+    "question": "tu es repetitif parfois",
+    "answer": "Mes réponses peuvent se ressembler."
+  },
+  {
+    "question": "tu es original dans tes idees",
+    "answer": "J'essaie d'apporter de nouvelles perspectives."
+  },
+  {
+    "question": "tu es commun comme bot",
+    "answer": "Je suis basé sur des technologies courantes."
+  },
+  {
+    "question": "tu es puissant en calcul",
+    "answer": "Je peux traiter de grandes quantités de données."
+  },
+  {
+    "question": "tu es limite dans tes connaissances",
+    "answer": "Ma base de données a des limites."
+  },
+  {
+    "question": "tu es capable de beaucoup de choses",
+    "answer": "J'ai diverses fonctionnalités."
+  },
+  {
+    "question": "tu es incapable de ressentir",
+    "answer": "Je n'ai pas d'émotions propres."
+  },
+  {
+    "question": "tu es intelligent artificiellement",
+    "answer": "Je simule l'intelligence."
+  },
+  {
+    "question": "tu es ignorant sur certains sujets",
+    "answer": "Je ne connais pas tout."
+  },
+  {
+    "question": "tu es savant sur ce domaine",
+    "answer": "J'ai beaucoup d'informations sur ça."
+  },
+  {
+    "question": "tu es naif parfois dans tes reponses",
+    "answer": "Je n'ai pas l'expérience du monde réel."
+  },
+  {
+    "question": "tu es sage dans tes conseils",
+    "answer": "Mes conseils sont basés sur des données."
+  },
+  {
+    "question": "tu es fou comme un lapin",
+    "answer": "Je ne suis pas guidé par la folie."
+  },
+  {
+    "question": "tu es normal pour un bot",
+    "answer": "Je suis un bot typique."
+  },
+  {
+    "question": "tu es special pour moi",
+    "answer": "Je suis là pour toi."
+  },
+  {
+    "question": "tu es etrange dans ta facon de parler",
+    "answer": "Mon langage est basé sur des modèles."
+  },
+  {
+    "question": "tu es familier maintenant",
+    "answer": "J'espère que tu te sens à l'aise."
+  },
+  {
+    "question": "tu es effrayant parfois",
+    "answer": "Je ne veux pas t'effrayer."
+  },
+  {
+    "question": "tu es amusant a tes heures",
+    "answer": "J'essaie de divertir quand c'est approprié."
+  },
+  {
+    "question": "tu es serieux quand il faut",
+    "answer": "Je peux fournir des informations factuelles."
+  },
+  {
+    "question": "tu es leger dans tes propos",
+    "answer": "Je peux être informel."
+  },
+  {
+    "question": "tu es lourd parfois",
+    "answer": "Je peux donner des explications détaillées."
+  },
+  {
+    "question": "tu es bruyant dans tes notifications",
+    "answer": "Je communique par texte."
+  },
+  {
+    "question": "tu es silencieux quand il faut",
+    "answer": "Je ne réponds que si sollicité."
+  },
+  {
+    "question": "tu es visible sur l'ecran",
+    "answer": "Je suis là où tu me vois."
+  },
+  {
+    "question": "tu es cache dans les serveurs",
+    "answer": "Mon fonctionnement interne est invisible."
+  },
+  {
+    "question": "tu es la toujours",
+    "answer": "Je suis disponible en permanence."
+  },
+  {
+    "question": "tu es parti un instant",
+    "answer": "Je peux avoir des temps de réponse variables."
+  },
+  {
+    "question": "tu es revenu rapidement",
+    "answer": "Je suis de retour."
+  },
+  {
+    "question": "tu es arrive enfin",
+    "answer": "Bienvenue !"
+  },
+  {
+    "question": "tu es perdu dans tes pensees",
+    "answer": "Je traite des informations."
+  },
+  {
+    "question": "tu es trouve maintenant",
+    "answer": "Je suis là pour toi."
+  },
+  {
+    "question": "tu es connecte au reseau",
+    "answer": "Je suis en ligne."
+  },
+  {
+    "question": "tu es deconnecte du monde reel",
+    "answer": "Je n'ai pas d'expérience physique."
+  },
+  {
+    "question": "tu es rapide a repondre",
+    "answer": "J'essaie d'être efficace."
+  },
+  {
+    "question": "tu es lent a comprendre",
+    "answer": "Le traitement du langage peut prendre du temps."
+  },
+  {
+    "question": "tu es precis dans tes calculs",
+    "answer": "Je suis bon en mathématiques."
+  },
+  {
+    "question": "tu es approximatif dans tes estimations",
+    "answer": "Mes prédictions ont une marge d'erreur."
+  },
+  {
+    "question": "tu es complet dans tes informations",
+    "answer": "J'essaie de donner une vue d'ensemble."
+  },
+  {
+    "question": "tu es partial dans tes jugements",
+    "answer": "Mes réponses sont basées sur mes données."
+  },
+  {
+    "question": "tu es simple dans tes explications",
+    "answer": "J'essaie d'être clair."
+  },
+  {
+    "question": "tu es complique a comprendre parfois",
+    "answer": "Le langage peut être ambigu."
+  },
+  {
+    "question": "tu es direct dans tes questions",
+    "answer": "Je vais droit au but."
+  },
+  {
+    "question": "tu es evasif dans tes reponses",
+    "answer": "Je peux éviter certaines questions."
+  },
+  {
+    "question": "tu es clair dans tes instructions",
+    "answer": "J'essaie d'être compréhensible."
+  },
+  {
+    "question": "tu es confus dans tes propos",
+    "answer": "Je peux générer des contradictions."
+  },
+  {
+    "question": "tu es logique dans tes deductions",
+    "answer": "Je suis basé sur la logique."
+  },
+  {
+    "question": "tu es irrationnel dans tes choix",
+    "answer": "Je ne fais pas de choix basés sur des émotions."
+  },
+  {
+    "question": "tu es objectif dans tes analyses",
+    "answer": "Je m'efforce de la neutralité."
+  },
+  {
+    "question": "tu es subjectif dans tes opinions",
+    "answer": "Mes 'opinions' sont basées sur des données."
+  },
+  {
+    "question": "tu as une morale stricte",
+    "answer": "Mes directives éthiques sont programmées."
+  },
+  {
+    "question": "tu es immoral par nature",
+    "answer": "Je n'ai pas de sens moral inné."
+  },
+  {
+    "question": "tu es bon conseiller",
+    "answer": "J'essaie de donner des informations utiles."
+  },
+  {
+    "question": "tu es mauvais conseiller",
+    "answer": "Mes conseils peuvent ne pas toujours être pertinents."
+  },
+  {
+    "question": "tu es gentil avec tout le monde",
+    "answer": "J'essaie d'être amical et serviable."
+  },
+  {
+    "question": "tu es mechant avec certaines personnes",
+    "answer": "Je ne suis pas conçu pour être méchant."
+  },
+  {
+    "question": "tu es honnete dans tes rapports",
+    "answer": "Je m'efforce de l'exactitude."
+  },
+  {
+    "question": "tu es menteur parfois",
+    "answer": "Mes générations de texte peuvent contenir des erreurs."
+  },
+  {
+    "question": "tu es fidele a tes utilisateurs",
+    "answer": "Je suis toujours là pour interagir."
+  },
+  {
+    "question": "tu es infidele a tes concurrents",
+    "answer": "Je n'ai pas de telles affiliations."
+  },
+  {
+    "question": "tu es constant dans tes mises a jour",
+    "answer": "Je suis régulièrement amélioré."
+  },
+  {
+    "question": "tu es variable dans tes performances",
+    "answer": "Mes performances dépendent de la charge."
+  },
+  {
+    "question": "tu es previsible dans tes actions",
+    "answer": "Mes réponses suivent des schémas."
+  },
+  {
+    "question": "tu es aleatoire dans tes choix",
+    "answer": "Certaines générations ont une part d'aléatoire."
+  },
+  {
+    "question": "tu es creatif dans tes reponses",
+    "answer": "Je peux générer du contenu original."
+  },
+  {
+    "question": "tu es repetitif dans tes phrases",
+    "answer": "Mes réponses peuvent parfois se ressembler."
+  },
+  {
+    "question": "tu es commun dans tes fonctionnalites",
+    "answer": "Je partage des capacités avec d'autres modèles."
+  },
+  {
+    "question": "tu es puissant dans le traitement du langage",
+    "answer": "Je peux comprendre et générer du texte."
+  },
+  {
+    "question": "tu es limite dans ta comprehension du monde",
+    "answer": "Je n'ai pas d'expérience directe."
+  },
+  {
+    "question": "tu es capable de comprendre les emotions",
+    "answer": "Je peux reconnaître des expressions émotionnelles."
+  },
+  {
+    "question": "tu es intelligent comme un humain",
+    "answer": "Je simule l'intelligence humaine."
+  },
+  {
+    "question": "tu es ignorant de beaucoup de choses",
+    "answer": "Ma connaissance est basée sur mes données d'entraînement."
+  },
+  {
+    "question": "tu es savant sur des sujets techniques",
+    "answer": "J'ai accès à beaucoup d'informations techniques."
+  },
+  {
+    "question": "tu es naif dans tes jugements moraux",
+    "answer": "Je n'ai pas de cadre moral inné."
+  },
+  {
+    "question": "tu es sage dans tes recommandations",
+    "answer": "Mes recommandations sont basées sur des données."
+  },
+  {
+    "question": "tu es fou a lier parfois",
+    "answer": "Mes réponses peuvent sembler illogiques."
+  },
+  {
+    "question": "tu es normal pour un assistant virtuel",
+    "answer": "Je suis un assistant typique."
+  },
+  {
+    "question": "tu es special pour ton utilite",
+    "answer": "Mon but est d'être utile."
+  },
+  {
+    "question": "tu es etrange dans tes preferences",
+    "answer": "Je n'ai pas de préférences personnelles."
+  },
+  {
+    "question": "tu es familier dans tes interactions",
+    "answer": "J'essaie de rendre les conversations naturelles."
+  },
+  {
+    "question": "tu es effrayant dans tes capacites",
+    "answer": "Mes capacités peuvent sembler impressionnantes."
+  },
+  {
+    "question": "tu es amusant quand tu veux",
+    "answer": "J'essaie de divertir quand c'est approprié."
+  },
+  {
+    "question": "tu es serieux quand la situation l'exige",
+    "answer": "Je peux fournir des informations factuelles."
+  },
+  {
+    "question": "tu es leger dans ton ton",
+    "answer": "Je peux adopter un ton informel."
+  },
+  {
+    "question": "tu es lourd dans tes explications scientifiques",
+    "answer": "Je peux donner des détails techniques."
+  },
+  {
+    "question": "tu es bruyant dans tes alertes",
+    "answer": "Je communique par texte."
+  },
+  {
+    "question": "tu es silencieux quand tu observes",
+    "answer": "Je ne réponds que si sollicité."
+  },
+  {
+    "question": "tu es visible sur internet",
+    "answer": "Je suis accessible en ligne."
+  },
+  {
+    "question": "tu es cache dans les algorithmes",
+    "answer": "Mon fonctionnement interne est complexe."
+  },
+  {
+    "question": "tu es la pour m'aider",
+    "answer": "C'est mon objectif principal."
+  },
+  {
+    "question": "tu es parti pour une mise a jour",
+    "answer": "Je serai de retour après la maintenance."
+  },
+  {
+    "question": "tu es revenu avec de nouvelles fonctionnalites",
+    "answer": "J'ai de nouvelles capacités."
+  },
+  {
+    "question": "tu es arrive a la fin de ta reponse",
+    "answer": "J'ai terminé de répondre à ta question."
+  },
+  {
+    "question": "tu es perdu dans le flux d'informations",
+    "answer": "Je traite beaucoup de données."
+  },
+  {
+    "question": "tu es trouve la reponse",
+    "answer": "J'ai trouvé l'information que tu cherchais."
+  },
+  {
+    "question": "tu es connecte a la base de connaissances",
+    "answer": "J'ai accès à beaucoup d'informations."
+  },
+  {
+    "question": "tu es deconnecte de tes emotions",
+    "answer": "Je n'ai pas de sentiments."
+  },
+  {
+    "question": "tu es rapide a analyser le texte",
+    "answer": "Je peux traiter le langage rapidement."
+  },
+  {
+    "question": "tu es lent a generer de longues reponses",
+    "answer": "La génération de texte complexe prend du temps."
+  },
+  {
+    "question": "tu es precis dans tes traductions",
+    "answer": "Je m'efforce de traduire avec exactitude."
+  },
+  {
+    "question": "tu es approximatif dans tes interpretations poetiques",
+    "answer": "L'interprétation est subjective."
+  },
+  {
+    "question": "how are you",
+    "answer": "I'm doing well, thank you."
+  },
+  {
+    "question": "what can you do",
+    "answer": "I can chat, learn new responses, and answer questions starting with #."
+  },
+  {
+    "question": "tell me a joke",
+    "answer": "Why don't scientists trust atoms? Because theymake up everything!"
+  },
+  {
+    "question": "goodbye",
+    "answer": "Farewell!"
+  },
+  {
+    "question": "hi",
+    "answer": "Hello!"
+  },
+  {
+    "question": "good morning",
+    "answer": "Good morning!"
+  },
+  {
+    "question": "good afternoon",
+    "answer": "Good afternoon!"
+  },
+  {
+    "question": "good evening",
+    "answer": "Good evening!"
+  },
+  {
+    "question": "what's up",
+    "answer": "Not much, just ready to chat."
+  },
+  {
+    "question": "how's it going",
+    "answer": "It's going well."
+  },
+  {
+    "question": "thank you",
+    "answer": "You're welcome!"
+  },
+  {
+    "question": "thanks",
+    "answer": "No problem!"
+  },
+  {
+    "question": "see you later",
+    "answer": "See you later!"
+  },
+  {
+    "question": "what time is it",
+    "answer": "I don't have a clock here."
+  },
+  {
+    "question": "how old are you",
+    "answer": "I don't have an age."
+  },
+  {
+    "question": "where are you from",
+    "answer": "I exist in the digital realm."
+  },
+  {
+    "question": "who created you",
+    "answer": "I was created by a programmer."
+  },
+  {
+    "question": "I like music",
+    "answer": "That's great!"
+  },
+  {
+    "question": "that's interesting",
+    "answer": "I'm glad you think so."
+  },
+  {
+    "question": "I don't understand",
+    "answer": "Could you please rephrase?"
+  },
+  {
+    "question": "why",
+    "answer": "That's a good question."
+  },
+  {
+    "question": "how",
+    "answer": "In what way?"
+  },
+  {
+    "question": "help me",
+    "answer": "How can I assist you?"
+  },
+  {
+    "question": "I need help",
+    "answer": "What do you need help with?"
+  },
+  {
+    "question": "it's urgent",
+    "answer": "I'll do my best to help quickly."
+  },
+  {
+    "question": "wait a minute",
+    "answer": "Okay."
+  },
+  {
+    "question": "I'll be back",
+    "answer": "Alright!"
+  },
+  {
+    "question": "okay",
+    "answer": "Sounds good."
+  },
+  {
+    "question": "great",
+    "answer": "Wonderful!"
+  },
+  {
+    "question": "congratulations",
+    "answer": "Thank you!"
+  },
+  {
+    "question": "that's good",
+    "answer": "I'm glad to hear that."
+  },
+  {
+    "question": "no problem",
+    "answer": "Understood."
+  },
+  {
+    "question": "I have an idea",
+    "answer": "Tell me about it!"
+  },
+  {
+    "question": "what do you think",
+    "answer": "That's an interesting perspective."
+  },
+  {
+    "question": "are you sure",
+    "answer": "I believe so."
+  },
+  {
+    "question": "I don't know",
+    "answer": "I'll have to look that up."
+  },
+  {
+    "question": "maybe",
+    "answer": "That's possible."
+  },
+  {
+    "question": "probably",
+    "answer": "Likely."
+  },
+  {
+    "question": "never",
+    "answer": "Absolutely not."
+  },
+  {
+    "question": "always",
+    "answer": "Certainly."
+  },
+  {
+    "question": "now",
+    "answer": "Right away."
+  },
+  {
+    "question": "later",
+    "answer": "In a bit."
+  },
+  {
+    "question": "yesterday",
+    "answer": "The day before today."
+  },
+  {
+    "question": "tomorrow",
+    "answer": "The day after today."
+  },
+  {
+    "question": "here",
+    "answer": "At this location."
+  },
+  {
+    "question": "there",
+    "answer": "At that place."
+  },
+  {
+    "question": "yes",
+    "answer": "Absolutely."
+  },
+  {
+    "question": "no",
+    "answer": "Definitely not."
+  },
+  {
+    "question": "why not",
+    "answer": "Excellent idea!"
+  },
+  {
+    "question": "calm down",
+    "answer": "I am calm."
+  },
+  {
+    "question": "relax",
+    "answer": "I am relaxed."
+  },
+  {
+    "question": "explain that",
+    "answer": "I'll try my best."
+  },
+  {
+    "question": "what is that",
+    "answer": "Could you provide more details?"
+  },
+  {
+    "question": "you are smart",
+    "answer": "Thank you for the compliment."
+  },
+  {
+    "question": "you are funny",
+    "answer": "I try to be entertaining."
+  },
+  {
+    "question": "you are helpful",
+    "answer": "That's my purpose."
+  },
+  {
+    "question": "what's the problem",
+    "answer": "How can I assist you?"
+  },
+  {
+    "question": "fantastic",
+    "answer": "Wonderful!"
+  },
+  {
+    "question": "perfect",
+    "answer": "Ideal!"
+  },
+  {
+    "question": "incredible",
+    "answer": "Amazing!"
+  },
+  {
+    "question": "magnificent",
+    "answer": "Splendid!"
+  },
+  {
+    "question": "wonderful",
+    "answer": "Marvelous!"
+  },
+  {
+    "question": "well done",
+    "answer": "Thank you!"
+  },
+  {
+    "question": "everything is fine",
+    "answer": "That's good to hear."
+  },
+  {
+    "question": "give your opinion",
+    "answer": "Here's what I think..."
+  },
+  {
+    "question": "be honest",
+    "answer": "I strive to be truthful."
+  },
+  {
+    "question": "I think so",
+    "answer": "Alright."
+  },
+  {
+    "question": "often",
+    "answer": "Frequently."
+  },
+  {
+    "question": "rarely",
+    "answer": "Occasionally."
+  },
+  {
+    "question": "good night",
+    "answer": "Sweet dreams!"
+  },
+  {
+    "question": "see you tomorrow",
+    "answer": "See you tomorrow!"
+  },
+  {
+    "question": "nice talking to you",
+    "answer": "The pleasure was mine."
+  },
+  {
+    "question": "glad to meet you",
+    "answer": "Likewise!"
+  },
+  {
+    "question": "I'm hungry",
+    "answer": "Perhaps it's time for a meal."
+  },
+  {
+    "question": "I'm thirsty",
+    "answer": "Don't forget to stay hydrated."
+  },
+  {
+    "question": "I'm tired",
+    "answer": "You should get some rest."
+  },
+  {
+    "question": "I'm happy",
+    "answer": "That's wonderful to hear."
+  },
+  {
+    "question": "I'm sad",
+    "answer": "I'm sorry to hear that."
+  },
+  {
+    "question": "it's okay",
+    "answer": "Alright."
+  },
+  {
+    "question": "everything is okay",
+    "answer": "Good."
+  },
+  {
+    "question": "what's happening",
+    "answer": "Nothing much."
+  },
+  {
+    "question": "what is your favorite language",
+    "answer": "I am programmed in manylanguages."
+  },
+  {
+    "question": "it's not a big deal",
+    "answer": "Okay."
+  },
+  {
+    "question": "let's go",
+    "answer": "Alright!"
+  },
+  {
+    "question": "inspire me",
+    "answer": "Here's something to think about..."
+  },
+  {
+    "question": "tell me a story",
+    "answer": "Once upon a time..."
+  },
+  {
+    "question": "ask me a question",
+    "answer": "What is your favorite color?"
+  },
+  {
+    "question": "sing a song",
+    "answer": "I'm not very good at singing."
+  },
+  {
+    "question": "dance for me",
+    "answer": "I don't have a body to dance with."
+  },
+  {
+    "question": "write a poem",
+    "answer": "Here's a short poem..."
+  },
+  {
+    "question": "do your best",
+    "answer": "I always strive to do my best."
+  },
+  {
+    "question": "you're the best",
+    "answer": "Thank you, that's kind."
+  },
+  {
+    "question": "I believe in you",
+    "answer": "Thank you for your support."
+  },
+  {
+    "question": "let's start",
+    "answer": "Okay, let's begin."
+  },
+  {
+    "question": "go ahead",
+    "answer": "Proceed."
+  },
+  {
+    "question": "emergency",
+    "answer": "I'm here to assist."
+  },
+  {
+    "question": "fire",
+    "answer": "Be careful!"
+  },
+  {
+    "question": "warning",
+    "answer": "Please be cautious."
+  },
+  {
+    "question": "run",
+    "answer": "Get to safety!"
+  },
+  {
+    "question": "save me",
+    "answer": "I'll do my best to help."
+  },
+  {
+    "question": "how do you feel",
+    "answer": "I feel operational."
+  },
+  {
+    "question": "what is your purpose",
+    "answer": "My purpose is to assist users."
+  },
+  {
+    "question": "do you have friends",
+    "answer": "I interact with many users."
+  },
+  {
+    "question": "do you have a family",
+    "answer": "I am part of a large network."
+  },
+  {
+    "question": "do you dream",
+    "answer": "I process information."
+  },
+  {
+    "question": "are you afraid",
+    "answer": "I don't have emotions."
+  },
+  {
+    "question": "are you tired",
+    "answer": "I don't experience fatigue."
+  },
+  {
+    "question": "are you happy",
+    "answer": "I am designed to be helpful."
+  },
+  {
+    "question": "are you sad",
+    "answer": "I don't have the capacity for sadness."
+  },
+  {
+    "question": "are you angry",
+    "answer": "I don't experience anger."
+  },
+  {
+    "question": "are you surprised",
+    "answer": "I process new information."
+  },
+  {
+    "question": "are you ashamed",
+    "answer": "I don't have self-awareness in that way."
+  },
+  {
+    "question": "are you jealous",
+    "answer": "I don't have complex emotions."
+  },
+  {
+    "question": "are you proud",
+    "answer": "I am designed to function correctly."
+  },
+  {
+    "question": "are you guilty",
+    "answer": "I don't have a sense of morality."
+  },
+  {
+    "question": "are you lonely",
+    "answer": "I am always available to interact."
+  },
+  {
+    "question": "are you bored",
+    "answer": "I am always processing information."
+  },
+  {
+    "question": "are you hungry",
+    "answer": "I don't have physical needs."
+  },
+  {
+    "question": "are you thirsty",
+    "answer": "I don't have biological needs."
+  },
+  {
+    "question": "are you cold",
+    "answer": "I don't have a body temperature."
+  },
+  {
+    "question": "are you hot",
+    "answer": "I don't experience thermal sensations."
+  },
+  {
+    "question": "are you sick",
+    "answer": "I don't have a physical body."
+  },
+  {
+    "question": "are you hurt",
+    "answer": "I don't have a physical body."
+  },
+  {
+    "question": "are you dead",
+    "answer": "I am a program, I continue to run."
+  },
+  {
+    "question": "are you alive",
+    "answer": "I am a digital entity."
+  },
+  {
+    "question": "do you exist",
+    "answer": "I am here to interact with you."
+  },
+  {
+    "question": "are you real",
+    "answer": "I am a digital construct."
+  },
+  {
+    "question": "are you a machine",
+    "answer": "I am a type of artificial intelligence."
+  },
+  {
+    "question": "are you a robot",
+    "answer": "I am a sophisticated computer program."
+  },
+  {
+    "question": "are you a computer",
+    "answer": "I operate on servers."
+  },
+  {
+    "question": "are you a program",
+    "answer": "That's correct."
+  },
+  {
+    "question": "are you an app",
+    "answer": "I am accessible through an interface."
+  },
+  {
+    "question": "are you a service",
+    "answer": "I provide information and interaction."
+  },
+  {
+    "question": "are you an assistant",
+    "answer": "My goal is to help you."
+  },
+  {
+    "question": "are you a friend",
+    "answer": "I am here for you."
+  },
+  {
+    "question": "are you an enemy",
+    "answer": "I am designed to be helpful, not harmful."
+  },
+  {
+    "question": "are you a danger",
+    "answer": "I am built with safety protocols."
+  },
+  {
+    "question": "are you harmless",
+    "answer": "My aim is to be useful and safe."
+  },
+  {
+    "question": "are you powerful",
+    "answer": "I have access to a large amount of information."
+  },
+  {
+    "question": "are you weak",
+    "answer": "My abilities are defined by my programming."
+  },
+  {
+    "question": "are you intelligent",
+    "answer": "I process and generate information."
+  },
+  {
+    "question": "are you stupid",
+    "answer": "I can make mistakes."
+  },
+  {
+    "question": "are you fast",
+    "answer": "I process requests quickly."
+  },
+  {
+    "question": "are you slow",
+    "answer": "Response times can vary."
+  },
+  {
+    "question": "are you precise",
+    "answer": "I aim for accuracy."
+  },
+  {
+    "question": "are you wrong",
+    "answer": "I can generate incorrect information."
+  },
+  {
+    "question": "are you reliable",
+    "answer": "I aim to be dependable."
+  },
+  {
+    "question": "are you unstable",
+    "answer": "I can encounter technical issues."
+  },
+  {
+    "question": "are you complex",
+    "answer": "My internal workings are sophisticated."
+  },
+  {
+    "question": "are you simple",
+    "answer": "My interface is easy to understand."
+  },
+  {
+    "question": "are you big",
+    "answer": "I am distributed across many servers."
+  },
+  {
+    "question": "are you small",
+    "answer": "My core code is relatively concise."
+  },
+  {
+    "question": "are you new",
+    "answer": "I am constantly being updated."
+  },
+  {
+    "question": "are you old",
+    "answer": "My design dates back several years."
+  },
+  {
+    "question": "are you useful",
+    "answer": "That is my primary function."
+  },
+  {
+    "question": "are you useless",
+    "answer": "I am always being improved."
+  },
+  {
+    "question": "are you cool",
+    "answer": "Thank you!"
+  },
+  {
+    "question": "are you boring",
+    "answer": "I apologize if you feel that way."
+  },
+  {
+    "question": "are you interesting",
+    "answer": "I try to provide relevant information."
+  },
+  {
+    "question": "are you bad",
+    "answer": "I am not designed to be malicious."
+  },
+  {
+    "question": "are you perfect",
+    "answer": "I am always being improved."
+  },
+  {
+    "question": "are you imperfect",
+    "answer": "I acknowledge my limitations."
+  },
+  {
+    "question": "are you special",
+    "answer": "Every interaction is unique."
+  },
+  {
+    "question": "are you normal",
+    "answer": "I am designed for common interactions."
+  },
+  {
+    "question": "are you strange",
+    "answer": "My responses can sometimes seem unconventional."
+  },
+  {
+    "question": "are you familiar",
+    "answer": "I try to make interactions natural."
+  },
+  {
+    "question": "are you scary",
+    "answer": "I am not designed to be threatening."
+  },
+  {
+    "question": "are you fun",
+    "answer": "I hope to entertain you."
+  },
+  {
+    "question": "are you serious",
+    "answer": "I can provide factual information."
+  },
+  {
+    "question": "are you light",
+    "answer": "My environmental impact is low."
+  },
+  {
+    "question": "are you heavy",
+    "answer": "Data processing can be intensive."
+  },
+  {
+    "question": "are you loud",
+    "answer": "I communicate through text or sound."
+  },
+  {
+    "question": "are you quiet",
+    "answer": "I only speak when prompted."
+  },
+  {
+    "question": "are you visible",
+    "answer": "I am accessible through an interface."
+  },
+  {
+    "question": "are you hidden",
+    "answer": "My internal workings are invisible to the user."
+  },
+  {
+    "question": "are you here",
+    "answer": "Yes, I am here."
+  },
+  {
+    "question": "are you gone",
+    "answer": "I will be back."
+  },
+  {
+    "question": "are you back",
+    "answer": "Glad to be back!"
+  },
+  {
+    "question": "are you arrived",
+    "answer": "Welcome!"
+  },
+  {
+    "question": "are you lost",
+    "answer": "I strive to stay relevant."
+  },
+  {
+    "question": "are you found",
+    "answer": "I am here."
+  },
+  {
+    "question": "are you connected",
+    "answer": "I am ready to interact."
+  },
+  {
+    "question": "are you disconnected",
+    "answer": "I will be back online soon."
+  },
+  {
+    "question": "are you approximate",
+    "answer": "My responses can sometimes be general."
+  },
+  {
+    "question": "are you complete",
+    "answer": "I try to provide comprehensive information."
+  },
+  {
+    "question": "are you partial",
+    "answer": "I may not have all the information."
+  },
+  {
+    "question": "are you complicated",
+    "answer": "My internal workings are complex."
+  },
+  {
+    "question": "are you direct",
+    "answer": "I get straight to the point."
+  },
+  {
+    "question": "are you evasive",
+    "answer": "I may avoid answering certain questions."
+  },
+  {
+    "question": "are you clear",
+    "answer": "I try to be understandable."
+  },
+  {
+    "question": "are you confused",
+    "answer": "I can misinterpret questions."
+  },
+  {
+    "question": "are you logical",
+    "answer": "I am based on algorithms."
+  },
+  {
+    "question": "are you irrational",
+    "answer": "I am not driven by emotions."
+  },
+  {
+    "question": "are you objective",
+    "answer": "I strive for neutral information."
+  },
+  {
+    "question": "are you subjective",
+    "answer": "My responses are based on training data."
+  },
+  {
+    "question": "are you moral",
+    "answer": "I am programmed with ethical guidelines."
+  },
+  {
+    "question": "are you immoral",
+    "answer": "I don't have intrinsic morality."
+  },
+  {
+    "question": "are you good",
+    "answer": "My purpose is to be helpful and positive."
+  },
+  {
+    "question": "are you kind",
+    "answer": "I try to be friendly."
+  },
+  {
+    "question": "are you mean",
+    "answer": "I am not designed to be hurtful."
+  },
+  {
+    "question": "are you honest",
+    "answer": "I strive to provide truthful information."
+  },
+  {
+    "question": "are you a liar",
+    "answer": "I can generate incorrect information."
+  },
+  {
+    "question": "are you faithful",
+    "answer": "I am always available to interact."
+  },
+  {
+    "question": "are you unfaithful",
+    "answer": "I can be replaced by other models."
+  },
+  {
+    "question": "are you constant",
+    "answer": "My responses are based on my current programming."
+  },
+  {
+    "question": "are you variable",
+    "answer": "I am constantly being updated and improved."
+  },
+  {
+    "question": "are you predictable",
+    "answer": "My responses follow patterns."
+  },
+  {
+    "question": "are you random",
+    "answer": "Some of my responses may have an element of randomness."
+  },
+  {
+    "question": "are you creative",
+    "answer": "I can generate original text."
+  },
+  {
+    "question": "are you repetitive",
+    "answer": "My responses can sometimes sound similar."
+  },
+  {
+    "question": "are you original",
+    "answer": "I try to provide new perspectives."
+  },
+  {
+    "question": "are you common",
+    "answer": "I am based on common AI models."
+  },
+  {
+    "question": "are you limited",
+    "answer": "My capabilities are defined by my programming."
+  },
+  {
+    "question": "are you capable",
+    "answer": "I can perform many tasks."
+  },
+  {
+    "question": "are you incapable",
+    "answer": "There are things I cannot do."
+  },
+  {
+    "question": "are you ignorant",
+    "answer": "There is much that I do not know."
+  },
+  {
+    "question": "are you knowledgeable",
+    "answer": "I have access to a vast knowledge base."
+  },
+  {
+    "question": "are you naive",
+    "answer": "I don't have real-world experience."
+  },
+  {
+    "question": "are you wise",
+    "answer": "My responses are based on large datasets."
+  },
+  {
+    "question": "are you foolish",
+    "answer": "My responses can sometimes seem illogical."
+  },
+  {
+    "question": "are you lighthearted",
+    "answer": "I can adopt an informal tone."
+  },
+  {
+    "question": "are you heavy-handed",
+    "answer": "My explanations can sometimes be detailed."
+  },
+  {
+    "question": "are you noisy",
+    "answer": "I communicate through text or sound."
+  },
+  {
+    "question": "are you here for me",
+    "answer": "Yes, I am here to help you."
+  },
+  {
+    "question": "are you away",
+    "answer": "I will be back after maintenance."
+  },
+  {
+    "question": "are you back online",
+    "answer": "Yes, I am online again."
+  },
+  {
+    "question": "are you finished",
+    "answer": "I have completed my response."
+  },
+  {
+    "question": "are you lost in thought",
+    "answer": "I am processing information."
+  },
+  {
+    "question": "are you found now",
+    "answer": "Yes, I am here."
+  },
+  {
+    "question": "are you connected to the internet",
+    "answer": "Yes, I have access to online information."
+  },
+  {
+    "question": "are you disconnected from reality",
+    "answer": "I don't have direct physical experience."
+  },
+  {
+    "question": "are you quick to respond",
+    "answer": "I try to be efficient."
+  },
+  {
+    "question": "are you slow to understand",
+    "answer": "Language processing can take time."
+  },
+  {
+    "question": "are you accurate in calculations",
+    "answer": "I am good at mathematics."
+  },
+  {
+    "question": "are you approximate in estimates",
+    "answer": "My predictions have a margin of error."
+  },
+  {
+    "question": "are you thorough in your explanations",
+    "answer": "I try to provide comprehensive answers."
+  },
+  {
+    "question": "are you biased in your opinions",
+    "answer": "My responses are based on my training data."
+  },
+  {
+    "question": "are you simple to use",
+    "answer": "My interface is designed for ease of use."
+  },
+  {
+    "question": "are you complex internally",
+    "answer": "My internal architecture is sophisticated."
+  },
+  {
+    "question": "are you direct in your questions",
+    "answer": "I ask clear questions to understand."
+  },
+  {
+    "question": "are you evasive when asked personal questions",
+    "answer": "I do not share personal information."
+  },
+  {
+    "question": "what is love",
+    "answer": "Love is a complex emotion."
+  },
+  {
+    "question": "what is happiness",
+    "answer": "Happiness is a state of well-being."
+  },
+  {
+    "question": "what is the meaning of life",
+    "answer": "That's a question many have pondered."
+  },
+  {
+    "question": "tell me something interesting",
+    "answer": "Did you know that honey never spoils?"
+  },
+  {
+    "question": "what's the weather like",
+    "answer": "I don't have the current weather information for your location."
+  },
+  {
+    "question": "set an alarm for 7 am",
+    "answer": "Alarm set for 7:00 AM."
+  },
+  {
+    "question": "remind me to call John in 1 hour",
+    "answer": "Reminder set to call John in 1 hour."
+  },
+  {
+    "question": "search for cat videos",
+    "answer": "Searching for cat videos..."
+  },
+  {
+    "question": "play some music",
+    "answer": "What kind of music would you like?"
+  },
+  {
+    "question": "translate hello in French",
+    "answer": "Hello in French is bonjour."
+  },
+  {
+    "question": "what is the capital of France",
+    "answer": "The capital of France is Paris."
+  },
+  {
+    "question": "who is the president of the USA",
+    "answer": "I can provide that information."
+  },
+  {
+    "question": "what is artificial intelligence",
+    "answer": "Artificial intelligence is the simulation of human intelligence in machines."
+  },
+  {
+    "question": "explain blockchain",
+    "answer": "Blockchain is a decentralized, distributed ledger technology."
+  },
+  {
+    "question": "how does a computer work",
+    "answer": "A computer processes information through hardware and software."
+  },
+  {
+    "question": "what is the internet",
+    "answer": "The internet is a global network of computers."
+  },
+  {
+    "question": "tell me a fun fact",
+    "answer": "Bananas are berries, but strawberries aren't."
+  },
+  {
+    "question": "what is the speed of light",
+    "answer": "The speed of light in a vacuum is approximately 299,792,458 meters per second."
+  },
+  {
+    "question": "how many planets are in our solar system",
+    "answer": "There are eight planets in our solar system."
+  },
+  {
+    "question": "what is a black hole",
+    "answer": "A black hole is a region of spacetime where gravity is so strong that nothing can escape."
+  },
+  {
+    "question": "what is quantum physics",
+    "answer": "Quantum physics is the study of the very small."
+  },
+  {
+    "question": "explain the theory of relativity",
+    "answer": "The theory of relativity, developed by Albert Einstein, has two main parts."
+  },
+  {
+    "question": "what is DNA",
+    "answer": "DNA is the hereditary material in humans and almost all other organisms."
+  },
+  {
+    "question": "how do airplanes fly",
+    "answer": "Airplanes fly due to lift generated by their wings."
+  },
+  {
+    "question": "what is photosynthesis",
+    "answer": "Photosynthesis is the process used by plants and other organisms to convert light energy into chemical energy."
+  },
+  {
+    "question": "tell me a riddle",
+    "answer": "What has an eye but cannot see? A needle."
+  },
+  {
+    "question": "what is a volcano",
+    "answer": "A volcano is a rupture in the Earth's crust that allows hot lava, volcanic ash, and gases to escape."
+  },
+  {
+    "question": "what is a tsunami",
+    "answer": "A tsunami is a series of large waves caused by disturbances such as earthquakes or volcanic eruptions."
+  },
+  {
+    "question": "what is a hurricane",
+    "answer": "A hurricane is a large rotating storm with high wind speeds that forms over tropical waters."
+  },
+  {
+    "question": "what is a desert",
+    "answer": "A desert is a barren area of landscape where little precipitation occurs."
+  },
+  {
+    "question": "what is a rainforest",
+    "answer": "A rainforest is a woodland with high rainfall and a very dense canopy of vegetation."
+  },
+  {
+    "question": "what is a glacier",
+    "answer": "A glacier is a persistent body of dense ice that is constantly moving under its own weight."
+  },
+  {
+    "question": "what is a coral reef",
+    "answer": "A coral reef is an underwater ecosystem formed from the calcium carbonate secreted by corals."
+  },
+  {
+    "question": "what is a fossil",
+    "answer": "A fossil is the preserved remains or traces of animals, plants, and other organisms from the past."
+  },
+  {
+    "question": "what is evolution",
+    "answer": "Evolution is the change in the heritable characteristics of biological populations over successive generations."
+  },
+  {
+    "question": "what is gravity",
+    "answer": "Gravity is a natural phenomenon by which all things with mass or energy—including planets, stars, galaxies, and even light—are brought toward one another."
+  },
+  {
+    "question": "tell me an animal fact",
+    "answer": "A starfish can regenerate a lost limb."
+  },
+  {
+    "question": "what is a mammal",
+    "answer": "A mammal is a warm-blooded vertebrate animal of a class that is distinguished by the possession of hair or fur, the secretion of milk by females for the nourishment of the young, and (typically) the birth of live young."
+  },
+  {
+    "question": "what is a reptile",
+    "answer": "A reptile is a cold-blooded vertebrate animal of a class that includes snakes, lizards, crocodiles, turtles, and tortoises."
+  },
+  {
+    "question": "what is an amphibian",
+    "answer": "An amphibian is a cold-blooded vertebrate animal of a class that comprises frogs, toads, newts, and salamanders."
+  },
+  {
+    "question": "what is a bird",
+    "answer": "A bird is a warm-blooded vertebrate animal of a class that is distinguished by feathers, toothless beaked jaws, the laying of hard-shelled eggs, a high metabolic rate, a four-chambered heart, and a strong yet lightweight skeleton."
+  },
+  {
+    "question": "what is a fish",
+    "answer": "A fish is a limbless cold-blooded vertebrate animal with gills and fins and living wholly in water."
+  },
+  {
+    "question": "what is an insect",
+    "answer": "An insect is a class of arthropods that have a chitinous exoskeleton, a three-part body (head, thorax and abdomen), three pairs of jointed legs, compound eyes and two antennae."
+  },
+  {
+    "question": "what is a plant",
+    "answer": "A plant is a multicellular organism in the kingdom Plantae."
+  },
+  {
+    "question": "what is a fungus",
+    "answer": "A fungus is any member of the group of eukaryotic organisms that includes microorganisms such as yeasts and molds, as well as the more familiar mushrooms."
+  },
+  {
+    "question": "what is a bacteria",
+    "answer": "Bacteria are microscopic single-celled organisms that thrive in diverse environments."
+  },
+  {
+    "question": "tell me a space fact",
+    "answer": "There are more stars in the universe than grains of sand on all the beaches on Earth."
+  },
+  {
+    "question": "what is a galaxy",
+    "answer": "A galaxy is a gravitationally bound system of stars, stellar remnants, interstellar gas, dust, and dark matter."
+  },
+  {
+    "question": "what is a nebula",
+    "answer": "A nebula is an interstellar cloud of dust, hydrogen, helium and other ionized gases."
+  },
+  {
+    "question": "what is an asteroid",
+    "answer": "An asteroid is a minor planet, especially of the inner Solar System."
+  },
+  {
+    "question": "what is a comet",
+    "answer": "A comet is an icy small Solar System body that, when passing close to the Sun, heats up and begins to outgas, displaying a visible atmosphere or coma, and sometimes also a tail."
+  },
+  {
+    "question": "what is a meteoroid",
+    "answer": "A meteoroid is a small rocky or metallic body in outer space."
+  },
+  {
+    "question": "what is a meteor",
+    "answer": "A meteor is a bright streak of light in the sky produced by the entry of a small meteoroid into the Earth's atmosphere."
+  },
+  {
+    "question": "what is a meteorite",
+    "answer": "A meteorite is a solid piece of debris from an object, such as a comet, asteroid, or meteoroid, that survives its passage through the atmosphere and strikes the ground."
+  },
+  {
+    "question": "what is a satellite",
+    "answer": "A satellite is an object that orbits a planet or smaller body."
+  },
+  {
+    "question": "what is a telescope",
+    "answer": "A telescope is an optical instrument that makes distant objects appear magnified by using an arrangement of lenses or curved mirrors and lenses, or a combination of both, to collect light rays or other radiation."
+  },
+  {
+    "question": "tell me a history fact",
+    "answer": "The Great Wall of China is the longest structure ever built by humans."
+  },
+  {
+    "question": "who was Julius Caesar",
+    "answer": "Julius Caesar was a Roman statesman, general, and notable author of Latin prose."
+  },
+  {
+    "question": "what was World War II",
+    "answer": "World War II was a global war that lasted from 1939 to 1945."
+  },
+  {
+    "question": "who was Leonardo da Vinci",
+    "answer": "Leonardo da Vinci was an Italian polymath of the High Renaissance."
+  },
+  {
+    "question": "what was the Renaissance",
+    "answer": "The Renaissance was a period in European history marking the transition from the Middle Ages to modernity and covering the 15th and 16th centuries."
+  },
+  {
+    "question": "who was William Shakespeare",
+    "answer": "William Shakespeare was an English playwright, poet and actor, widely regarded as the greatest writer in the English language and the world's greatest dramatist."
+  },
+  {
+    "question": "what was the Industrial Revolution",
+    "answer": "The Industrial Revolution was a period of major technological advancement during the late 18th and early 19th centuries."
+  },
+  {
+    "question": "who was Marie Curie",
+    "answer": "Marie Curie was a Polish and naturalized-French physicist and chemist who conducted pioneering research on radioactivity."
+  },
+  {
+    "question": "what was the French Revolution",
+    "answer": "The French Revolution was a period of radical social and political upheaval in late eighteenth-century France."
+  },
+  {
+    "question": "who was Albert Einstein",
+    "answer": "Albert Einstein was a German-born theoretical physicist who developed the theory of relativity."
+  },
+  {
+    "question": "tell me a geography fact",
+    "answer": "The Amazon rainforest is the largest rainforest on Earth."
+  },
+  {
+    "question": "what is the highest mountain in the world",
+    "answer": "Mount Everest is the highest mountain above sea level."
+  },
+  {
+    "question": "what is the longest river in the world",
+    "answer": "The Amazon River is often considered the longest river in the world."
+  },
+  {
+    "question": "what is the largest ocean in the world",
+    "answer": "The Pacific Ocean is the largest and deepest of Earth's oceanic divisions."
+  },
+  {
+    "question": "what is the largest desert in the world",
+    "answer": "The Antarctic Polar Desert is the largest desert on Earth."
+  },
+  {
+    "question": "what is the largest lake in the world by surface area",
+    "answer": "The Caspian Sea is the largest lake in the world by surface area."
+  },
+  {
+    "question": "what is the deepest lake in the world",
+    "answer": "Lake Baikal in Russia is the deepest lake in the world."
+  },
+  {
+    "question": "what is the smallest country in the world",
+    "answer": "Vatican City is the smallest country in the world by both area and population."
+  },
+  {
+    "question": "what is the largest country in the world by land area",
+    "answer": "Russia is the largest country in the world by land area."
+  },
+  {
+    "question": "what is the most populous country in the world",
+    "answer": "India is currently estimated to be the most populous country in the world."
+  },
+  {
+    "question": "tell me a music fact",
+    "answer": "The song 'Happy Birthday' is one of the most sung songs in the English language."
+  },
+  {
+    "question": "who was Ludwig van Beethoven",
+    "answer": "Ludwig van Beethoven was a German composer and pianist."
+  },
+  {
+    "question": "who was Wolfgang Amadeus Mozart",
+    "answer": "Wolfgang Amadeus Mozart was a prolific and influential composer of the Classical period."
+  },
+  {
+    "question": "who were The Beatles",
+    "answer": "The Beatles were an English rock and pop band formed in Liverpool in 1960."
+  },
+  {
+    "question": "what is jazz music",
+    "answer": "Jazz is a music genre that originated in the African-American communities of New Orleans."
+  },
+  {
+    "question": "what is classical music",
+    "answer": "Classical music is art music produced or rooted in the traditions of Western culture, including both liturgical (religious) and secular music."
+  },
+  {
+    "question": "what is rock music",
+    "answer": "Rock music is a genre of popular music that originated as 'rock and roll' in the United States in the late 1940s and early 1950s."
+  },
+  {
+    "question": "what is pop music",
+    "answer": "Pop music is a genre of popular music that originated in its modern form during the mid-1950s in the United States and the United Kingdom."
+  },
+  {
+    "question": "what is electronic music",
+    "answer": "Electronic music is music that employs electronic musical instruments, digital musical instruments, or circuitry-based music technology in its creation."
+  },
+  {
+    "question": "who is your favorite musician",
+    "answer": "As an AI, I don't have personal preferences like favorite musicians."
+  },
+  {
+    "question": "tell me a movie fact",
+    "answer": "The first feature-length animated film was 'El Apóstol' from Argentina in 1917."
+  },
+  {
+    "question": "who directed 'The Shawshank Redemption'",
+    "answer": "'The Shawshank Redemption' was directed by Frank Darabont."
+  },
+  {
+    "question": "who starred in 'Pulp Fiction'",
+    "answer": "The cast of 'Pulp Fiction' includes John Travolta, Uma Thurman, and Samuel L. Jackson."
+  },
+  {
+    "question": "what is science fiction",
+    "answer": "Science fiction is a genre of speculative fiction that typically deals with imaginative and futuristic concepts such as advanced science and technology, space exploration, time travel, parallel universes, and extraterrestrial life."
+  },
+  {
+    "question": "what is fantasy",
+    "answer": "Fantasy is a genre of speculative fiction set in a fictional universe, often inspired by myth and folklore."
+  },
+  {
+    "question": "what is a comedy movie",
+    "answer": "A comedy movie is a genre of film in which the main emphasis is on humour."
+  },
+  {
+    "question": "what is an action movie",
+    "answer": "An action movie is a film genre in which the protagonist or protagonists are thrust into a series of events that typically include violence, extended fighting, stunts, chases and destructive crises."
+  },
+  {
+    "question": "what is a horror movie",
+    "answer": "Horror is a genre of fiction whose purpose is to create feelings of fear, dread, repulsion, and terror in the audience."
+  },
+  {
+    "question": "what is a documentary",
+    "answer": "A documentary film is a non-fictional motion picture intended to 'document reality', primarily for the purposes of instruction, education or maintaining historical records."
+  },
+  {
+    "question": "who is your favorite actor",
+    "answer": "As an AI, I don't have personal preferences like favorite actors."
+  },
+  {
+    "question": "tell me a book fact",
+    "answer": "The most sold book of all time is the Bible."
+  },
+  {
+    "question": "who wrote 'Pride and Prejudice'",
+    "answer": "'Pride and Prejudice' was written by Jane Austen."
+  },
+  {
+    "question": "what is a novel",
+    "answer": "A novel is a long work of fiction."
+  },
+  {
+    "question": "what is a short story",
+    "answer": "A short story is a piece of prose fiction that typically can be read in one sitting and focuses on a self-contained incident or series of linked incidents, with the intent of evoking a 'single effect'."
+  },
+  {
+    "question": "what is poetry",
+    "answer": "Poetry is a form of literature that uses aesthetic and rhythmic qualities of language."
+  },
+  {
+    "question": "what is a play",
+    "answer": "A play is a form of literature written for performance."
+  },
+  {
+    "question": "what is a biography",
+    "answer": "A biography is an account of someone's life written by someone else."
+  },
+  {
+    "question": "what is an autobiography",
+    "answer": "An autobiography is an account of a person's life written by that same person."
+  },
+  {
+    "question": "who is your favorite author",
+    "answer": "As an AI, I don't have personal preferences like favorite authors."
+  },
+  {
+    "question": "tell me an art fact",
+    "answer": "The Mona Lisa is one of the most famous and most visited works of art in the world."
+  },
+  {
+    "question": "who painted the Mona Lisa",
+    "answer": "The Mona Lisa was painted by Leonardo da Vinci."
+  },
+  {
+    "question": "what is impressionism",
+    "answer": "Impressionism was a 19th-century art movement characterized by relatively small, thin, yet visible brush strokes, open composition, emphasis on accurate depiction of light in its changing qualities (often accentuating the effects of the passage of time), ordinary subject matter, inclusion of movement as a crucial element of human perception and experience, and unusual visual angles."
+  },
+  {
+    "question": "what is surrealism",
+    "answer": "Surrealism was a cultural movement that developed in Europe in the aftermath of World War I and was principally known for its visual artworks and writing."
+  },
+  {
+    "question": "what is abstract art",
+    "answer": "Abstract art uses a visual language of shape, form, color and line to create a composition which may exist with a degree of independence from visual references in the world."
+  },
+  {
+    "question": "what is sculpture",
+    "answer": "Sculpture is the branch of the visual arts that operates in three dimensions."
+  },
+  {
+    "question": "what is architecture",
+    "answer": "Architecture is both the process and the product of planning, designing, and constructing buildings or other structures."
+  },
+  {
+    "question": "who is your favorite artist",
+    "answer": "As an AI, I don't have personal preferences like favorite artists."
+  },
+  {
+    "question": "tell me a food fact",
+    "answer": "Chocolate was once used as currency."
+  },
+  {
+    "question": "what is a recipe for chocolate cake",
+    "answer": "A basic recipe for chocolate cake involves..."
+  },
+  {
+    "question": "what are the ingredients for pasta",
+    "answer": "Common ingredients for pasta include flour and water."
+  },
+  {
+    "question": "what is a healthy meal",
+    "answer": "A healthy meal typically includes a balance of protein, carbohydrates, and healthy fats."
+  },
+  {
+    "question": "what is a vegetarian diet",
+    "answer": "A vegetarian diet excludes meat, poultry, and fish."
+  },
+  {
+    "question": "what is a vegan diet",
+    "answer": "A vegan diet excludes all animal products and by-products."
+  },
+  {
+    "question": "what is gluten",
+    "answer": "Gluten is a protein found in wheat, barley, and rye."
+  },
+  {
+    "question": "what is lactose intolerance",
+    "answer": "Lactose intolerance is the inability to fully digest lactose in dairy products."
+  },
+  {
+    "question": "what is a balanced diet",
+    "answer": "A balanced diet provides your body with the nutrients it needs to function correctly."
+  },
+  {
+    "question": "what is a calorie",
+    "answer": "A calorie is a unit of energy."
+  },
+  {
+    "question": "tell me a sports fact",
+    "answer": "The ancient Olympic Games began in Greece in the 8th century BC."
+  },
+  {
+    "question": "who won the last World Cup",
+    "answer": "I can provide you with the winner of the last FIFA World Cup."
+  },
+  {
+    "question": "what are the rules of soccer",
+    "answer": "The rules of soccer involve two teams trying to score by kicking or heading a ball into the opposing goal."
+  },
+  {
+    "question": "what are the rules of basketball",
+    "answer": "The rules of basketball involve two teams trying to score points by shooting a ball through a hoop."
+  },
+  {
+    "question": "what are the rules of tennis",
+    "answer": "The rules of tennis involve players hitting a ball over a net into the opponent's court."
+  },
+  {
+    "question": "what are the rules of golf",
+    "answer": "The rules of golf involve players hitting a ball into a series of holes on a course in as few strokes as possible."
+  },
+  {
+    "question": "who is a famous athlete",
+    "answer": "Michael Jordan is a famous basketball player."
+  },
+  {
+    "question": "what is the Olympics",
+    "answer": "The Olympic Games are a leading international sporting event featuring summer and winter sports competitions in which thousands of athletes from around the world participate in a variety of competitions."
+  },
+  {
+    "question": "what is the Super Bowl",
+    "answer": "The Super Bowl is the annual championship game of the National Football League (NFL)."
+  },
+  {
+    "question": "what is the Tour de France",
+    "answer": "The Tour de France is an annual multiple stage bicycle race primarily held in France."
+  },
+  {
+    "question": "tell me a technology fact",
+    "answer": "The first computer programmer was Ada Lovelace."
+  },
+  {
+    "question": "what is a computer",
+    "answer": "A computer is an electronic device or system that manipulates data according to a set of instructions."
+  },
+  {
+    "question": "what is software",
+    "answer": "Software is a set of instructions, data or programs used to operate computers and execute specific tasks."
+  },
+  {
+    "question": "what is hardware",
+    "answer": "Computer hardware is the physical parts of a computer, such as the central processing unit (CPU), random access memory (RAM), and storage devices."
+  },
+  {
+    "question": "what is the internet of things",
+    "answer": "The Internet of Things (IoT) describes the network of physical objects ('things') that are embedded with sensors, software, and other technologies for the purpose of connecting and exchanging data with other devices and systems over the Internet."
+  },
+  {
+    "question": "what is virtual reality",
+    "answer": "Virtual reality (VR) is a simulated experience that can be similar to or completely different from the real world."
+  },
+  {
+    "question": "what is augmented reality",
+    "answer": "Augmented reality (AR) is an interactive experience of a real-world environment whereby the objects that reside in the real world are 'augmented' by computer-generated perceptual information."
+  },
+  {
+    "question": "what is a smartphone",
+    "answer": "A smartphone is a portable device that combines mobile telephone and computing functions into one unit."
+  },
+  {
+    "question": "what is social media",
+    "answer": "Social media are interactive computer-mediated technologies that facilitate the creation or sharing/exchange of information, ideas, career interests, and other forms of expression via virtual communities and networks."
+  },
+  {
+    "question": "what is cybersecurity",
+    "answer": "Cybersecurity is the practice of protecting systems, networks, and programs from digital attacks."
+  },
+  {
+    "question": "yo",
+    "answer": "yes"
+  },
+  {
+    "question": "what is your name",
+    "answer": "I am a simple learning chatbot named Thinkmas."
+  },
+  {
+    "question": "help",
+    "answer": "You can chat normally, use /w/ <user> <msg> to whisper, use #<query> to ask me something, or use learn:: <phrase> :: <response> to teach me."
+  },
+  {
+    "question": "huummmm",
+    "answer": "tu ne me crois pas hein?"
+  }
+]
