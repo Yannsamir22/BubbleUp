@@ -8,6 +8,7 @@ export function ImposterCreateModal({ channelId, onClose }) {
   const categories = useStore((s) => s.imposterCategories) ?? [];
   const [mode, setMode] = useState("random");
   const [category, setCategory] = useState("any");
+  const [imposterCount, setImposterCount] = useState(1);
   const [custom, setCustom] = useState({ category: "", word: "" });
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState("");
@@ -26,8 +27,8 @@ export function ImposterCreateModal({ channelId, onClose }) {
     try {
       const opts =
         mode === "random"
-          ? { mode, category: category === "any" ? undefined : category }
-          : { mode, category: custom.category.trim(), word: custom.word.trim() };
+          ? { mode, category: category === "any" ? undefined : category, imposterCount }
+          : { mode, category: custom.category.trim(), word: custom.word.trim(), imposterCount };
       await s().createImposter(channel.id, opts);
       onClose();
     } catch (err) {
@@ -40,7 +41,7 @@ export function ImposterCreateModal({ channelId, onClose }) {
   return (
     <Modal
       title="Play Imposter"
-      subtitle={`Everyone gets a secret word except one player: the imposter. Give clues, then vote to find them. The game card appears in #${channel.name}.`}
+      subtitle={`Choose how many imposters to hide among the players. Everyone else gets the secret word. Give clues, then vote to find them. The game card appears in #${channel.name}.`}
       onClose={onClose}
       footer={
         <>
@@ -49,6 +50,23 @@ export function ImposterCreateModal({ channelId, onClose }) {
         </>
       }
     >
+      <div className="field">
+        <span className="field-label">Number of imposters</span>
+        <div className="imp-cats">
+          {[1, 2, 3].map((count) => (
+            <button
+              key={count}
+              type="button"
+              className={`imp-cat${imposterCount === count ? " active" : ""}`}
+              aria-pressed={imposterCount === count}
+              onClick={() => setImposterCount(count)}
+            >
+              {count} {count === 1 ? "imposter" : "imposters"}
+            </button>
+          ))}
+        </div>
+        <span className="field-hint">At least {Math.max(3, imposterCount + 2)} players are needed.</span>
+      </div>
       <div className="field">
         <span className="field-label">Who picks the secret word?</span>
         <div className="segmented">

@@ -53,6 +53,7 @@ export const useStore = create((set, get) => ({
   toasts: [],
   jump: null,
   games: {}, // live chess games by id (from realtime updates)
+  calendarEvents: {},
   imposter: {}, // Imposter games by id: public view only (no word, no imposter)
   imposterMe: {}, // my own secret per Imposter game: { role, word, version }
   imposterWatchers: {}, // user ids with each Imposter game open
@@ -139,7 +140,7 @@ export const useStore = create((set, get) => ({
   },
   async logout() {
     await api.post("/auth/logout").catch(() => {});
-    set({ status: "anon", me: null, classes: [], details: {}, messages: {}, ephemeral: {}, modal: null, panel: null, games: {}, imposter: {}, imposterMe: {}, imposterWatchers: {} });
+    set({ status: "anon", me: null, classes: [], details: {}, messages: {}, ephemeral: {}, modal: null, panel: null, games: {}, calendarEvents: {}, imposter: {}, imposterMe: {}, imposterWatchers: {} });
   },
   async updateProfile(patch) {
     const { user } = await api.patch("/me", patch);
@@ -181,6 +182,24 @@ export const useStore = create((set, get) => ({
   },
   async loadClass(classId) {
     return get().storeDetail(await api.get(`/classes/${classId}`));
+  },
+  async loadCalendar(classId) {
+    const { events } = await api.get(`/classes/${classId}/events`);
+    get().onCalendarUpdated({ classId, events });
+    return events;
+  },
+  async createCalendarEvent(classId, event) {
+    const { events } = await api.post(`/classes/${classId}/events`, event);
+    get().onCalendarUpdated({ classId, events });
+    return events;
+  },
+  async deleteCalendarEvent(classId, eventId) {
+    const { events } = await api.del(`/classes/${classId}/events/${eventId}`);
+    get().onCalendarUpdated({ classId, events });
+    return events;
+  },
+  onCalendarUpdated({ classId, events }) {
+    set((s) => ({ calendarEvents: { ...s.calendarEvents, [classId]: events } }));
   },
   async createClass(data) {
     return get().storeDetail(await api.post("/classes", data));
@@ -232,8 +251,10 @@ export const useStore = create((set, get) => ({
   dropClass(classId) {
     set((s) => {
       const details = { ...s.details };
+      const calendarEvents = { ...s.calendarEvents };
       delete details[classId];
-      return { details, classes: s.classes.filter((c) => c.id !== classId) };
+      delete calendarEvents[classId];
+      return { details, calendarEvents, classes: s.classes.filter((c) => c.id !== classId) };
     });
   },
 

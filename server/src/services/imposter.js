@@ -8,15 +8,18 @@ import { IMPOSTER_CATEGORIES, IMPOSTER_WORDS } from "./imposterWords.js";
 
 export const MIN_PLAYERS = 3;
 export const MAX_PLAYERS = 10;
+export const MAX_IMPOSTERS = 3;
 export const ROUNDS = 2;
 const MAX_CLUE_WORDS = 3;
 
+const imposterCountSchema = z.number().int().min(1).max(MAX_IMPOSTERS).default(1);
 const createSchema = z.discriminatedUnion("mode", [
-  z.object({ mode: z.literal("random"), category: z.string().trim().max(40).optional() }),
+  z.object({ mode: z.literal("random"), category: z.string().trim().max(40).optional(), imposterCount: imposterCountSchema }),
   z.object({
     mode: z.literal("custom"),
     category: z.string().trim().min(1, "Give the category, e.g. Animals").max(40),
     word: z.string().trim().min(1, "Type the secret word").max(40),
+    imposterCount: imposterCountSchema,
   }),
 ]);
 const clueSchema = z.object({ text: z.string().trim().min(1, "Type a clue").max(30, "Keep your clue under 30 characters") });
@@ -62,9 +65,9 @@ function shuffle(list) {
 }
 
 /**
- * The Imposter word game. Everyone except one player (the imposter) gets the same secret word;
+ * The Imposter word game. Everyone except the imposters gets the same secret word;
  * players take turns giving short clues for ROUNDS rounds, then vote on who the imposter is.
- * A caught imposter gets one guess at the word to steal the win.
+ * A caught imposter gets one guess at the word to win for the team.
  *
  * The server is the referee and the only place the secret lives. Two views are built from a row:
  *  - publicDto: safe for everyone (chat card, broadcasts, spectators) — no word, no imposter until revealed;
@@ -99,6 +102,7 @@ export function createImposterService(db, { channels, classes, messages }) {
   }
 
   const state = (g) => ({ players: JSON.parse(g.players), clues: JSON.parse(g.clues), votes: JSON.parse(g.votes) });
+  const imposters = (g) => (g.imposter_ids ? JSON.parse(g.imposter_ids) : g.imposter_id ? [g.imposter_id] : []);
 
   function assertManager(g, userId, membership) {
     if (g.host_id !== userId && !isStaff(membership.role)) throw forbidden("Only the person who started the game (or a teacher) can do that.");
@@ -122,7 +126,7 @@ export function createImposterService(db, { channels, classes, messages }) {
     return round > ROUNDS ? { turn: 0, round: ROUNDS, status: "voting" } : { turn, round };
   }
 
-  /** Counts the votes. Only a clear majority on the imposter catches them; a tie or a wrong pick lets them win. */
+  /** Counts the votes. Only a clear majority on an imposter catches them; a tie or a wrong pick lets the team win. */
   function tally(g, votes) {
     const counts = new Map();
     for (const target of Object.values(votes)) counts.set(target, (counts.get(target) ?? 0) + 1);
@@ -130,7 +134,7 @@ export function createImposterService(db, { channels, classes, messages }) {
     const top = [...counts].filter(([, n]) => n === best).map(([id]) => id);
     if (best === 0) return { status: "finished", result: "imposter", reason: "no_votes", accused_id: null };
     if (top.length > 1) return { status: "finished", result: "imposter", reason: "tie", accused_id: null };
-    if (top[0] !== g.imposter_id) return { status: "finished", result: "imposter", reason: "wrong_vote", accused_id: top[0] };
+    if (!imposters(g).includes(top[0])) return { status: "finished", result: "imposter", reason: "wrong_vote", accused_id: top[0] };
     return { status: "guess", accused_id: top[0] };
   }
 
@@ -141,7 +145,8 @@ export function createImposterService(db, { channels, classes, messages }) {
     publicDto(g) {
       const { players, clues, votes } = state(g);
       const over = g.status === "finished" || g.status === "cancelled";
-      const started = !!g.imposter_id; // the imposter is only chosen when the game starts
+      const team = imposters(g);
+      const started = team.length > 0;
       const votingDone = g.status === "guess" || g.status === "finished";
       return {
         id: g.id,
@@ -152,8 +157,9 @@ export function createImposterService(db, { channels, classes, messages }) {
         status: g.status,
         category: g.category,
         players: players.map(userById).filter(Boolean),
-        minPlayers: MIN_PLAYERS,
+        minPlayers: Math.max(MIN_PLAYERS, g.imposter_count + 2),
         maxPlayers: MAX_PLAYERS,
+        imposterCount: g.imposter_count,
         rounds: ROUNDS,
         round: g.round,
         turnUserId: g.status === "clues" ? players[g.turn] : null,
@@ -162,7 +168,8 @@ export function createImposterService(db, { channels, classes, messages }) {
         votes: votingDone ? Object.entries(votes).map(([voterId, targetId]) => ({ voterId: Number(voterId), targetId })) : [],
         accusedId: g.accused_id,
         // Revealed once the imposter is caught (guess phase) or the game is over.
-        imposterId: g.status === "guess" || (over && started) ? g.imposter_id : null,
+        imposterId: g.status === "guess" ? g.accused_id : over && started ? g.imposter_id ?? team[0] : null,
+        imposterIds: over && started ? team : [],
         word: over && started ? g.word : null,
         guess: g.guess,
         result: g.result,
@@ -177,12 +184,13 @@ export function createImposterService(db, { channels, classes, messages }) {
       const players = JSON.parse(g.players);
       const isPlayer = players.includes(userId);
       const isMaster = !g.host_plays && g.host_id === userId;
+      const isImposter = imposters(g).includes(userId);
       if (isMaster) return { role: "host", word: g.word };
       if (!isPlayer) return { role: "spectator", word: null };
       if (g.status === "lobby") return { role: "player", word: null };
       // Your own vote is yours to see; everyone's votes are shown once voting closes.
       const vote = g.status === "voting" ? JSON.parse(g.votes)[userId] ?? null : null;
-      if (g.imposter_id === userId) return { role: "imposter", word: null, vote };
+      if (isImposter) return { role: "imposter", word: null, vote };
       return { role: "player", word: g.word, vote };
     },
 
@@ -224,16 +232,18 @@ export function createImposterService(db, { channels, classes, messages }) {
         word = opts.word;
       }
       const hostPlays = opts.mode === "random";
+      const minPlayers = Math.max(MIN_PLAYERS, opts.imposterCount + 2);
 
       return db.tx(() => {
         const t = now();
         const { lastInsertRowid } = db.run(
-          `INSERT INTO imposter_games (class_id, channel_id, host_id, host_plays, category, word, status, players, created_at, updated_at)
-           VALUES (?, ?, ?, ?, ?, ?, 'lobby', ?, ?, ?)`,
-          channel.class_id, channelId, userId, hostPlays ? 1 : 0, category, word, JSON.stringify(hostPlays ? [userId] : []), t, t,
+          `INSERT INTO imposter_games (class_id, channel_id, host_id, host_plays, category, word, status, players, imposter_count, created_at, updated_at)
+           VALUES (?, ?, ?, ?, ?, ?, 'lobby', ?, ?, ?, ?)`,
+          channel.class_id, channelId, userId, hostPlays ? 1 : 0, category, word, JSON.stringify(hostPlays ? [userId] : []), opts.imposterCount, t, t,
         );
         const gameId = Number(lastInsertRowid);
-        const body = `🕵️ Who wants to play Imposter? Category: ${category}. Join the game! (${MIN_PLAYERS}–${MAX_PLAYERS} players)`;
+        const teamLabel = `${opts.imposterCount} imposter${opts.imposterCount === 1 ? "" : "s"}`;
+        const body = `🕵️ Who wants to play Imposter? Category: ${category}. ${teamLabel}. Join the game! (${minPlayers}–${MAX_PLAYERS} players)`;
         const messageId = messages.createWithMeta(channelId, userId, body, { type: "imposter", gameId });
         db.run("UPDATE imposter_games SET message_id = ? WHERE id = ?", messageId, gameId);
         return { gameId, messageId, channel };
@@ -265,9 +275,18 @@ export function createImposterService(db, { channels, classes, messages }) {
       assertManager(g, userId, membership);
       if (g.status !== "lobby") throw badRequest("This game has already started.");
       const { players } = state(g);
-      if (players.length < MIN_PLAYERS) throw badRequest(`You need at least ${MIN_PLAYERS} players to start.`);
+      const minPlayers = Math.max(MIN_PLAYERS, g.imposter_count + 2);
+      if (players.length < minPlayers) throw badRequest(`You need at least ${minPlayers} players to start with ${g.imposter_count} imposters.`);
       const order = shuffle(players);
-      const fresh = save(gameId, { players: JSON.stringify(order), imposter_id: pick(order), status: "clues", round: 1, turn: 0 });
+      const team = shuffle(order).slice(0, g.imposter_count);
+      const fresh = save(gameId, {
+        players: JSON.stringify(order),
+        imposter_id: team[0],
+        imposter_ids: JSON.stringify(team),
+        status: "clues",
+        round: 1,
+        turn: 0,
+      });
       return { g: fresh, channel, started: true };
     },
 
@@ -281,7 +300,7 @@ export function createImposterService(db, { channels, classes, messages }) {
       const clean = text.replace(/\s+/g, " ");
       if (clean.split(" ").length > MAX_CLUE_WORDS) throw badRequest(`Keep it short: up to ${MAX_CLUE_WORDS} words.`);
       // Only someone who knows the word is told it's in their clue — telling the imposter would leak it.
-      if (userId !== g.imposter_id && revealsWord(clean, g.word)) throw badRequest("That gives the secret word away! Try another clue.");
+      if (!imposters(g).includes(userId) && revealsWord(clean, g.word)) throw badRequest("That gives the secret word away! Try another clue.");
       clues.push({ userId, text: clean, round: g.round });
       return { g: save(gameId, { clues: JSON.stringify(clues), ...nextTurn(g, players) }), channel };
     },
@@ -303,7 +322,7 @@ export function createImposterService(db, { channels, classes, messages }) {
       const { text } = parse(guessSchema, input);
       const { g, channel } = visible(gameId, userId);
       if (g.status !== "guess") throw badRequest("There's nothing to guess right now.");
-      if (g.imposter_id !== userId) throw forbidden("Only the imposter guesses the word.");
+      if (g.accused_id !== userId || !imposters(g).includes(userId)) throw forbidden("Only the caught imposter guesses the word.");
       const right = sameWord(text, g.word);
       return {
         g: save(gameId, { guess: text, status: "finished", result: right ? "imposter" : "players", reason: right ? "guessed" : "caught" }),

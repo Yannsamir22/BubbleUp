@@ -241,6 +241,20 @@
 .imp-cat:hover { background: var(--hover); }
 .imp-cat.active { border-color: var(--primary); background: var(--primary-soft); color: var(--primary); font-weight: 700; }
 
+/* ---------- Class calendar ---------- */
+.calendar-create { display: grid; gap: 12px; padding-bottom: 16px; border-bottom: 1px solid var(--border); }
+.calendar-create > .btn { justify-self: start; }
+.calendar-events { display: grid; gap: 10px; }
+.calendar-events h3 { margin: 0; font-family: var(--font-display); font-size: 16px; }
+.calendar-empty { display: flex; align-items: center; gap: 10px; padding: 18px; border: 1px dashed var(--border-strong); border-radius: var(--radius); color: var(--text-3); }
+.calendar-event { display: flex; align-items: flex-start; gap: 12px; padding: 12px; border: 1px solid var(--border); border-radius: var(--radius); background: var(--surface-2); }
+.calendar-event-icon { display: grid; place-items: center; width: 36px; height: 36px; flex-shrink: 0; border-radius: 10px; background: var(--primary-soft); color: var(--primary); }
+.calendar-event-content { display: grid; gap: 4px; min-width: 0; flex: 1; }
+.calendar-event-content > strong { overflow-wrap: anywhere; }
+.calendar-event-time { display: flex; align-items: center; gap: 5px; font-size: 13px; color: var(--text-2); }
+.calendar-event-content p { margin: 2px 0; font-size: 13px; white-space: pre-wrap; overflow-wrap: anywhere; }
+.calendar-event-author { font-size: 12px; color: var(--text-3); }
+
 @media (max-width: 700px) {
   .imp-layout { grid-template-columns: 1fr; }
 }

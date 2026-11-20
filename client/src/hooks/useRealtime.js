@@ -70,6 +70,12 @@ export function useRealtime() {
     });
     socket.on("imposter:secret", (e) => st().onImposterSecret(e));
     socket.on("imposter:watchers", (e) => st().onImposterWatchers(e));
+    socket.on("calendar:updated", (e) => st().onCalendarUpdated(e));
+    socket.on("calendar:reminder", ({ event }) => {
+      const message = `${event.title} starts ${new Date(event.startsAt).toLocaleString()}`;
+      if (document.visibilityState === "visible" && document.hasFocus()) st().toast(`Calendar reminder: ${message}`);
+      else showNotification("Upcoming class event", message);
+    });
     socket.on("emojis:updated", (e) => st().onEmojisUpdated(e));
     socket.on("class:updated", (e) => st().patchClass(e.class.id, e.class));
     socket.on("class:refresh", (e) => st().loadClass(e.classId).catch(() => {}));

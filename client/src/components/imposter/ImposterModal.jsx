@@ -1,8 +1,8 @@
-import { useEffect, useRef, useState } from "react";
 import { Check, Eye, EyeOff, Radio, SkipForward, X } from "lucide-react";
-import { useStore } from "../../store/index.js";
+import { useEffect, useRef, useState } from "react";
 import { getSocket } from "../../hooks/useRealtime.js";
 import { playPop } from "../../lib/browser.js";
+import { useStore } from "../../store/index.js";
 import { Avatar, Button, Modal, Spinner } from "../ui/primitives.jsx";
 import { imposterStatus } from "./ImposterCard.jsx";
 
@@ -29,9 +29,9 @@ function useWatchImposter(gameId) {
 }
 
 const REASONS = {
-  guessed: "They were caught, but guessed the word.",
-  caught: "They were caught and didn't guess the word.",
-  no_guess: "They were caught and ran out of time to guess.",
+  guessed: "The imposter team guessed the word.",
+  caught: "The imposter team was caught and didn't guess the word.",
+  no_guess: "The caught imposter ran out of time to guess for the team.",
   wrong_vote: "The class voted for the wrong person.",
   tie: "The vote was a tie, so the imposter slipped away.",
   no_votes: "Nobody voted, so the imposter slipped away.",
@@ -88,6 +88,7 @@ function ClueBoard({ game, meId }) {
   const cell = (playerId, round) => game.clues.find((c) => c.userId === playerId && c.round === round);
   const votesFor = (id) => game.votes.filter((v) => v.targetId === id).length;
   const showVotes = game.votes.length > 0;
+  const revealedImposters = new Set(game.imposterIds ?? []);
   return (
     <table className="imp-board">
       <thead>
@@ -102,11 +103,11 @@ function ClueBoard({ game, meId }) {
       </thead>
       <tbody>
         {game.players.map((p) => (
-          <tr key={p.id} className={game.imposterId === p.id ? "is-imposter" : ""}>
+          <tr key={p.id} className={revealedImposters.has(p.id) || game.imposterId === p.id ? "is-imposter" : ""}>
             <td className="imp-board-name">
               <Avatar user={p} size={22} />
               <span>{p.id === meId ? "You" : p.displayName}</span>
-              {game.imposterId === p.id && <span className="imp-chip danger">imposter</span>}
+              {(revealedImposters.has(p.id) || game.imposterId === p.id) && <span className="imp-chip danger">imposter</span>}
             </td>
             {rounds.map((r) => {
               const c = cell(p.id, r);
@@ -200,6 +201,7 @@ export function ImposterModal({ gameId, onClose }) {
   const advanceLabel = { clues: "Skip this turn", voting: "Close voting now", guess: "End the guess" }[game.status];
   const turnName = game.players.find((p) => p.id === game.turnUserId)?.displayName;
   const imposter = game.players.find((p) => p.id === game.imposterId);
+  const revealedImposters = (game.imposterIds ?? []).map((id) => game.players.find((p) => p.id === id)).filter(Boolean);
 
   return (
     <Modal title={`Imposter · ${game.category}`} onClose={onClose} wide>
@@ -235,9 +237,15 @@ export function ImposterModal({ gameId, onClose }) {
 
           {game.status === "finished" && (
             <div className={`imp-result ${game.result}`}>
-              <strong>{game.result === "imposter" ? "The imposter wins!" : "The players win!"}</strong>
+              <strong>
+                {game.result === "imposter"
+                  ? `The imposter${game.imposterCount > 1 ? "s" : ""} win!`
+                  : "The players win!"}
+              </strong>
               <span>
-                The imposter was <b>{imposter?.id === meId ? "you" : imposter?.displayName}</b> and the word was <b>{game.word}</b>. {REASONS[game.reason]}
+                {revealedImposters.length > 1 ? "The imposters were " : "The imposter was "}
+                <b>{(revealedImposters.length ? revealedImposters : [imposter].filter(Boolean)).map((p) => p.id === meId ? "you" : p.displayName).join(", ")}</b>
+                {" "}and the word was <b>{game.word}</b>. {REASONS[game.reason]}
               </span>
               {game.guess && <span className="muted">Their guess: “{game.guess}”</span>}
             </div>

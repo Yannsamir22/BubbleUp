@@ -21,8 +21,8 @@ async function member(name) {
 }
 
 /** Student hosts a random-word game; teacher, ana and ben join. Returns players by id. */
-async function lobbyWithFour() {
-  const res = await c.student.post(`/api/channels/${c.general.id}/imposter`).send({ mode: "random", category: "food" }).expect(201);
+async function lobbyWithFour(imposterCount = 1) {
+  const res = await c.student.post(`/api/channels/${c.general.id}/imposter`).send({ mode: "random", category: "food", imposterCount }).expect(201);
   const game = res.body.message.imposter;
   const ana = await member("ana");
   const ben = await member("ben");
@@ -94,6 +94,34 @@ describe("imposter", () => {
     expect(seen.me).toEqual({ role: "spectator", word: null });
     expect(JSON.stringify(seen)).not.toContain(`"${word}"`);
     await watcher.post(`/api/imposter/${game.id}/clue`).send({ text: "hello" }).expect(403);
+  });
+
+  it("supports an imposter team, catches one member, and lets them guess for the team", async () => {
+    const invalid = await c.student.post(`/api/channels/${c.general.id}/imposter`).send({ mode: "random", imposterCount: 0 }).expect(400);
+    expect(invalid.body.error).toBeTruthy();
+
+    const { game, agents } = await lobbyWithFour(2);
+    const { started, views, word } = await start(game, agents);
+    const imposterIds = [...views].filter(([, view]) => view.me.role === "imposter").map(([id]) => id);
+    expect(started).toMatchObject({ imposterCount: 2, minPlayers: 4 });
+    expect(imposterIds).toHaveLength(2);
+    for (const [id, view] of views) {
+      expect(view.me.word).toBe(id === imposterIds[0] || id === imposterIds[1] ? null : word);
+    }
+
+    await playClues(game, agents);
+    const accusedId = imposterIds[0];
+    for (const id of agents.keys()) {
+      const targetId = id === accusedId ? imposterIds[1] : accusedId;
+      await agents.get(id).post(`/api/imposter/${game.id}/vote`).send({ targetId }).expect(200);
+    }
+    const caught = (await c.student.get(`/api/imposter/${game.id}`)).body.game;
+    expect(caught).toMatchObject({ status: "guess", accusedId, imposterId: accusedId, imposterIds: [] });
+    await agents.get(imposterIds[1]).post(`/api/imposter/${game.id}/guess`).send({ text: word }).expect(403);
+
+    const finished = (await agents.get(accusedId).post(`/api/imposter/${game.id}/guess`).send({ text: word }).expect(200)).body.game;
+    expect(finished).toMatchObject({ status: "finished", result: "imposter", reason: "guessed" });
+    expect(finished.imposterIds.sort()).toEqual(imposterIds.sort());
   });
 
   it("clues in turn order; the word itself is refused, but not for the imposter", async () => {

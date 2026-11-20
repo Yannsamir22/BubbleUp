@@ -19,6 +19,7 @@ import { createChessService } from "./services/chess.js";
 import { createImposterService } from "./services/imposter.js";
 import { createEmojiService } from "./services/emojis.js";
 import { createAwardsService, isoWeek } from "./services/awards.js";
+import { createCalendarService } from "./services/calendar.js";
 import { createRealtime } from "./realtime/index.js";
 import { authRoutes } from "./routes/auth.routes.js";
 import { classRoutes } from "./routes/classes.routes.js";
@@ -43,7 +44,8 @@ export function createServer(config, { logger = console, fetchImpl } = {}) {
   messages.extend("imposter", imposter);
   const emojis = createEmojiService(db, config, { classes });
   const awards = createAwardsService(db);
-  const services = { users, classes, channels, messages, uploads, chess, imposter, emojis, awards };
+  const calendar = createCalendarService(db, { classes });
+  const services = { users, classes, channels, messages, uploads, chess, imposter, emojis, awards, calendar };
   const bot = createBot(db, config, { fetchImpl, awards });
 
   const app = express();
@@ -163,6 +165,28 @@ export function createServer(config, { logger = console, fetchImpl } = {}) {
     }
   });
 
+  /** Sends one class-wide reminder 24 hours before each event. */
+  function dispatchCalendarReminders(at = Date.now()) {
+    const due = calendar.dispatchReminders(at);
+    for (const event of due) rt.toClass(event.classId, "calendar:reminder", { event });
+    return due.length;
+  }
+  const calendarTimer = setInterval(() => {
+    try {
+      dispatchCalendarReminders();
+    } catch (err) {
+      logger.error("[calendar]", err);
+    }
+  }, 60 * 1000);
+  calendarTimer.unref();
+  setImmediate(() => {
+    try {
+      dispatchCalendarReminders();
+    } catch (err) {
+      logger.error("[calendar]", err);
+    }
+  });
+
   // Hourly housekeeping: forget uploads that were never sent.
   const cleanup = setInterval(() => {
     try {
@@ -177,11 +201,12 @@ export function createServer(config, { logger = console, fetchImpl } = {}) {
   async function close() {
     clearInterval(cleanup);
     clearInterval(countdownTimer);
+    clearInterval(calendarTimer);
     if (awardsTimer) clearInterval(awardsTimer);
     await rt.close();
     if (server.listening) await new Promise((ok) => server.close(() => ok()));
     db.close();
   }
 
-  return { app, server, db, services, rt, bot, close, postWeeklyAwards, unpinFinishedCountdowns };
+  return { app, server, db, services, rt, bot, close, postWeeklyAwards, unpinFinishedCountdowns, dispatchCalendarReminders };
 }

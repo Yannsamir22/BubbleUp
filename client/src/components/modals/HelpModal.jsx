@@ -1,6 +1,6 @@
 import { useState } from "react";
 import {
-  AtSign, BarChart3, Bot, Disc3, Gamepad2, Hash, Megaphone, Mic, MoreHorizontal, Paperclip, Pin, Plus, Reply, Search, Shield, Smile, SmilePlus, Swords, Trophy, Users, VenetianMask, Timer, PartyPopper,
+  AtSign, BarChart3, Bot, CalendarDays, Disc3, Gamepad2, Hash, Megaphone, Mic, MoreHorizontal, Paperclip, Pin, Plus, Reply, Search, Shield, Smile, SmilePlus, Swords, Trophy, Users, VenetianMask, Timer, PartyPopper,
 } from "lucide-react";
 import { isStaffRole, useStore } from "../../store/index.js";
 import { Modal } from "../ui/primitives.jsx";
@@ -41,6 +41,9 @@ const SECTIONS = {
         </Row>
         <Row icon={Users} title="Private messages">
           Under “Direct messages” in the sidebar, or from someone's name in the People list. Only the two of you can read them.
+        </Row>
+        <Row icon={CalendarDays} title="Class calendar">
+          Open <b>Calendar</b> in a class channel to see upcoming tests and events. Teachers can add events, and the class gets an in-app reminder 24 hours ahead.
         </Row>
       </>
     ),
@@ -132,9 +135,9 @@ const SECTIONS = {
           their name in the People list.
         </Row>
         <Row icon={VenetianMask} title="Imposter">
-          A group game for 3 to 10 players. Everyone gets the same secret word except one player, the imposter, who only knows the
-          category. Take turns giving short clues (two rounds), then vote for who you think the imposter is. If they are caught, they can
-          still win by guessing the word. Start one from the Games button or with <code>/imposter</code> (or <code>/imposter food</code>).
+          A group game for 3 to 10 players. Choose one to three imposters: everyone else gets the same secret word, while imposters only
+          know the category. Take turns giving short clues (two rounds), then vote for who you think the imposters are. If one is caught,
+          they can still win for their team by guessing the word. Start one from the Games button or with <code>/imposter</code> (or <code>/imposter food</code>).
           Classmates who aren't playing can watch live, but they never see the word until the end.
         </Row>
         <Row icon={Timer} title="Countdowns">

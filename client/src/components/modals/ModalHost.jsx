@@ -11,6 +11,7 @@ import { ChessChallengeModal, ClassEmojiModal, PickModal } from "./FunModals.jsx
 import { ChessModal } from "../chess/ChessModal.jsx";
 import { ImposterModal } from "../imposter/ImposterModal.jsx";
 import { ImposterCreateModal } from "../imposter/ImposterCreateModal.jsx";
+import { CalendarModal } from "../calendar/CalendarModal.jsx";
 
 /** Renders whichever modal is open in the store. */
 export function ModalHost() {
@@ -27,6 +28,8 @@ export function ModalHost() {
       return <ImposterModal {...props} />;
     case "imposterCreate":
       return <ImposterCreateModal {...props} />;
+    case "calendar":
+      return <CalendarModal {...props} />;
     case "pick":
       return <PickModal {...props} />;
     case "classEmoji":

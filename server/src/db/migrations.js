@@ -200,7 +200,7 @@ export const migrations = [
     host_id      INTEGER NOT NULL REFERENCES users(id) ON DELETE CASCADE,
     host_plays   INTEGER NOT NULL,           -- 1: host plays, word picked by the server; 0: host typed the word and runs the game
     category     TEXT NOT NULL,
-    word         TEXT NOT NULL,              -- secret: never sent to spectators or the imposter until the game ends
+    word         TEXT NOT NULL,              -- secret: never sent to spectators or imposters until the game ends
     status       TEXT NOT NULL CHECK (status IN ('lobby','clues','voting','guess','finished','cancelled')),
     players      TEXT NOT NULL DEFAULT '[]', -- user ids; in turn order once started
     imposter_id  INTEGER REFERENCES users(id) ON DELETE SET NULL,
@@ -217,5 +217,29 @@ export const migrations = [
     updated_at   INTEGER NOT NULL
   );
   CREATE INDEX idx_imposter_message ON imposter_games(message_id);
+
+  `,
+
+  /* v4 — configurable Imposter teams */
+  `
+  ALTER TABLE imposter_games ADD COLUMN imposter_count INTEGER NOT NULL DEFAULT 1;
+  ALTER TABLE imposter_games ADD COLUMN imposter_ids TEXT;
+  `,
+
+  /* v5 — class calendar and reminders */
+  `
+  CREATE TABLE calendar_events (
+    id             INTEGER PRIMARY KEY,
+    class_id       INTEGER NOT NULL REFERENCES classes(id) ON DELETE CASCADE,
+    title          TEXT NOT NULL,
+    description    TEXT NOT NULL DEFAULT '',
+    starts_at      INTEGER NOT NULL,
+    reminder_at    INTEGER NOT NULL,
+    reminder_sent  INTEGER NOT NULL DEFAULT 0,
+    created_by     INTEGER NOT NULL REFERENCES users(id) ON DELETE CASCADE,
+    created_at     INTEGER NOT NULL
+  );
+  CREATE INDEX idx_calendar_events_start ON calendar_events(class_id, starts_at);
+  CREATE INDEX idx_calendar_reminders ON calendar_events(reminder_at) WHERE reminder_sent = 0;
   `,
 ];

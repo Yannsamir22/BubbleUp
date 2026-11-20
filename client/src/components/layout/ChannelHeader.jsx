@@ -1,4 +1,4 @@
-import { CircleHelp, Hash, Megaphone, Menu, Pencil, Pin, Search, Users } from "lucide-react";
+import { CalendarDays, CircleHelp, Hash, Megaphone, Menu, Pencil, Pin, Search, Users } from "lucide-react";
 import { isStaffRole, useStore } from "../../store/index.js";
 import { Avatar, IconButton } from "../ui/primitives.jsx";
 
@@ -56,6 +56,7 @@ export function ChannelHeader({ channel, detail }) {
         <HeaderButton icon={Pin} label="Pinned" active={panel === "pins"} onClick={() => setPanel("pins")} />
         <HeaderButton icon={Search} label="Search" active={panel === "search"} onClick={() => setPanel("search")} />
         <HeaderButton icon={Users} label={`People (${Object.keys(detail.members).length})`} active={panel === "members"} onClick={() => setPanel("members")} />
+        {!isDm && <HeaderButton icon={CalendarDays} label="Calendar" onClick={() => openModal("calendar", { classId: detail.class.id, className: detail.class.name, role: detail.myRole })} />}
         <HeaderButton icon={CircleHelp} label="Help" onClick={() => openModal("help")} />
       </div>
     </header>

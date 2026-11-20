@@ -4,6 +4,7 @@ import userEvent from "@testing-library/user-event";
 import { useStore } from "../src/store/index.js";
 import { api } from "../src/lib/api.js";
 import { ImposterCard } from "../src/components/imposter/ImposterCard.jsx";
+import { ImposterCreateModal } from "../src/components/imposter/ImposterCreateModal.jsx";
 import { ImposterModal } from "../src/components/imposter/ImposterModal.jsx";
 
 vi.mock("../src/lib/api.js", () => ({ api: { get: vi.fn(), post: vi.fn() } }));
@@ -43,6 +44,27 @@ describe("<ImposterCard>", () => {
     expect(screen.getByRole("button", { name: "Watch live" })).toBeInTheDocument();
     rerender(<ImposterCard initial={game({ status: "lobby", turnUserId: null, players: [ada, kofi] })} />);
     expect(screen.getByRole("button", { name: "Join the game" })).toBeInTheDocument();
+  });
+});
+
+describe("<ImposterCreateModal>", () => {
+  it("sends the selected imposter count when creating a game", async () => {
+    as(sam, { role: "spectator", word: null });
+    useStore.setState((s) => ({
+      details: { ...s.details, 10: { ...s.details[10], channels: { 100: { id: 100, name: "general" } } } },
+    }));
+    api.get.mockResolvedValue({ categories: [] });
+    api.post.mockResolvedValue({ message: { id: 51, channelId: 100 } });
+
+    render(<ImposterCreateModal channelId={100} onClose={() => {}} />);
+    await userEvent.click(screen.getByRole("button", { name: "2 imposters" }));
+    await userEvent.click(screen.getByRole("button", { name: "Post the game" }));
+
+    expect(api.post).toHaveBeenCalledWith("/channels/100/imposter", {
+      mode: "random",
+      category: undefined,
+      imposterCount: 2,
+    });
   });
 });
 

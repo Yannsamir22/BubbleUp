@@ -17,9 +17,13 @@ export function imposterStatus(game, meId) {
     case "voting":
       return `Voting · ${game.votedUserIds.length} of ${game.players.length} voted`;
     case "guess":
-      return game.imposterId === meId ? "You were caught! Guess the word to win" : `${nameOf(game, game.imposterId, meId)} was caught and gets one guess`;
+      return game.imposterId === meId
+        ? "You were caught! Guess for your team to win"
+        : `${nameOf(game, game.imposterId, meId)} was caught and gets one guess for the imposter team`;
     case "finished":
-      return game.result === "imposter" ? "The imposter won" : "The players won";
+      return game.result === "imposter"
+        ? `The imposter${game.imposterCount > 1 ? "s" : ""} won`
+        : "The players won";
     case "cancelled":
       return "Game cancelled";
     default:

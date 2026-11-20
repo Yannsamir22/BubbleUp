@@ -8,7 +8,7 @@ const id = (v) => {
 };
 
 export function classRoutes({ services, rt }) {
-  const { classes, channels, messages, uploads, emojis } = services;
+  const { classes, channels, messages, uploads, emojis, calendar } = services;
   const r = Router();
 
   function detail(classId, userId) {
@@ -60,6 +60,27 @@ export function classRoutes({ services, rt }) {
 
   r.get("/classes/:classId", (req, res) => {
     res.json(detail(id(req.params.classId), req.user.id));
+  });
+
+  r.get("/classes/:classId/events", (req, res) => {
+    const classId = id(req.params.classId);
+    res.json({ events: calendar.list(classId, req.user.id) });
+  });
+
+  r.post("/classes/:classId/events", (req, res) => {
+    const classId = id(req.params.classId);
+    calendar.create(classId, req.user.id, req.body ?? {});
+    const events = calendar.list(classId, req.user.id);
+    rt.toClass(classId, "calendar:updated", { classId, events });
+    res.status(201).json({ events });
+  });
+
+  r.delete("/classes/:classId/events/:eventId", (req, res) => {
+    const classId = id(req.params.classId);
+    calendar.remove(classId, id(req.params.eventId), req.user.id);
+    const events = calendar.list(classId, req.user.id);
+    rt.toClass(classId, "calendar:updated", { classId, events });
+    res.json({ events });
   });
 
   r.patch("/classes/:classId", (req, res) => {
