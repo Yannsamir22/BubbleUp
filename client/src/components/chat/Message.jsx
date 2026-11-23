@@ -11,6 +11,7 @@ import { Poll } from "./Poll.jsx";
 import { PickWheel } from "./PickWheel.jsx";
 import { ChessCard } from "../chess/ChessCard.jsx";
 import { ImposterCard } from "../imposter/ImposterCard.jsx";
+import { WordChainCard } from "../word-chain/WordChainCard.jsx";
 import { CountdownCard } from "./CountdownCard.jsx";
 
 export const Message = memo(function Message({ message: m, grouped, members, myRole, channelKind, usernames, emojis, highlighted, seen, onOpenImage }) {
@@ -130,6 +131,7 @@ export const Message = memo(function Message({ message: m, grouped, members, myR
             {m.meta?.type === "countdown" && <CountdownCard meta={m.meta} />}
             {m.chess && <ChessCard initial={m.chess} />}
             {m.imposter && <ImposterCard initial={m.imposter} />}
+            {m.wordChain && <WordChainCard initial={m.wordChain} />}
             {m.editedAt && <span className="msg-edited" title={`Edited ${formatFull(m.editedAt)}`}>(edited)</span>}
             {m.attachments?.length > 0 && <Attachments attachments={m.attachments} onOpenImage={onOpenImage} />}
             {m.poll && <Poll message={m} canClose={mine || staff} />}

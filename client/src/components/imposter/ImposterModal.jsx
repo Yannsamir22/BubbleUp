@@ -73,7 +73,7 @@ function RoleCard({ game, me }) {
       </>
     );
   return (
-    <div className={`imp-role${me.role === "imposter" ? " imposter" : " player"}`}>
+    <div className={`imp-role${me.role === "imposter" ? " player" : " player"}`}>
       {shown ? secret : <span>Make sure nobody is looking at your screen.</span>}
       <Button size="sm" variant="ghost" onClick={() => setShown((v) => !v)}>
         {shown ? <EyeOff size={14} /> : <Eye size={14} />} {shown ? "Hide my card" : "Show my card"}

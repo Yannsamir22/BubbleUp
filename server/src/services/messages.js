@@ -95,6 +95,8 @@ export function createMessageService(db, { channels, classes }) {
     const games = chessIds.length && extensions.chess ? extensions.chess.forMessages(chessIds) : new Map();
     const imposterIds = rows.filter((r) => r.meta && !r.deleted_at && r.meta.includes('"imposter"')).map((r) => r.id);
     const imposterGames = imposterIds.length && extensions.imposter ? extensions.imposter.forMessages(imposterIds) : new Map();
+    const wordChainIds = rows.filter((r) => r.meta && !r.deleted_at && r.meta.includes('"wordChain"')).map((r) => r.id);
+    const wordChainGames = wordChainIds.length && extensions.wordChain ? extensions.wordChain.forMessages(wordChainIds) : new Map();
 
     return rows.map((r) => {
       const deleted = !!r.deleted_at;
@@ -103,6 +105,7 @@ export function createMessageService(db, { channels, classes }) {
         meta,
         chess: games.get(r.id) ?? null,
         imposter: imposterGames.get(r.id) ?? null,
+        wordChain: wordChainGames.get(r.id) ?? null,
         id: r.id,
         channelId: r.channel_id,
         kind: r.kind,

@@ -120,6 +120,74 @@
 .pick-list { display: grid; gap: 2px; max-height: 380px; overflow: auto; }
 .pick-list .member-row:disabled { opacity: 0.6; }
 
+/* ================= Word Chain ================= */
+.word-chain-card {
+  margin-top: 6px;
+  padding: 12px 14px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  background: var(--surface);
+  max-width: 430px;
+  display: grid;
+  gap: 10px;
+}
+.word-chain-card.my-turn { border-color: var(--primary); box-shadow: 0 0 0 3px var(--primary-soft); }
+.word-chain-card-head { display: flex; align-items: center; gap: 8px; }
+.word-chain-card-head > svg { color: var(--primary); flex-shrink: 0; }
+.word-chain-card-status { margin-left: auto; color: var(--text-2); font-size: 12.5px; text-align: right; }
+.word-chain-players { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px; }
+.word-chain-player { display: inline-flex; align-items: center; gap: 6px; font-size: 13px; font-weight: 600; }
+.word-chain-player.turn { color: var(--primary); }
+.word-chain-player small { color: var(--text-3); font-size: 11px; font-weight: 500; }
+.word-chain-preview { display: flex; flex-wrap: wrap; gap: 6px; margin: 0; }
+.word-chain-preview span { padding: 3px 8px; border-radius: 999px; background: var(--surface-2); font-size: 12px; font-weight: 600; }
+.word-chain-actions { display: flex; flex-wrap: wrap; gap: 8px; }
+.word-chain-layout { display: grid; grid-template-columns: minmax(0, 1fr) 210px; gap: 20px; align-items: start; }
+.word-chain-main { display: grid; gap: 12px; min-width: 0; }
+.word-chain-status { margin: 0; font-family: var(--font-display); font-size: 17px; font-weight: 700; }
+.word-chain-status.mine { color: var(--primary); }
+.word-chain-input { display: flex; gap: 8px; }
+.word-chain-input .input { min-width: 0; flex: 1; }
+.word-chain-list { display: grid; gap: 4px; max-height: 340px; overflow: auto; list-style: none; margin: 0; padding: 0; }
+.word-chain-list li { display: flex; align-items: center; gap: 10px; padding: 7px 9px; border-radius: var(--radius); background: var(--surface-2); }
+.word-chain-number { width: 22px; color: var(--text-3); font-size: 12px; text-align: right; }
+.word-chain-author { display: inline-flex; align-items: center; gap: 6px; margin-left: auto; color: var(--text-2); font-size: 12px; }
+.word-chain-side { display: grid; gap: 12px; align-content: start; }
+.word-chain-player-list { display: grid; gap: 8px; }
+.word-chain-player-list > strong { margin-bottom: 2px; }
+.word-chain-rules { display: flex; align-items: flex-start; gap: 7px; color: var(--text-2); font-size: 12px; line-height: 1.5; }
+.word-chain-rules svg { flex-shrink: 0; color: var(--primary); }
+.word-chain-player.out { opacity: 0.5; }
+.word-chain-player.out > span { text-decoration: line-through; }
+.word-chain-player .word-chain-out { color: var(--danger, #d64545); font-weight: 700; text-transform: uppercase; }
+.word-chain-player-list .word-chain-lives { margin-left: auto; }
+.word-chain-lives { display: inline-flex; gap: 1px; }
+.word-chain-lives .full { color: var(--danger, #e0475b); fill: currentColor; }
+.word-chain-lives .empty { color: var(--text-3); }
+.word-chain-status-row { display: flex; align-items: center; gap: 12px; }
+.word-chain-timer {
+  margin-left: auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 3px 10px;
+  border-radius: 999px;
+  background: var(--surface-2);
+  font-variant-numeric: tabular-nums;
+  font-weight: 700;
+  font-size: 13px;
+}
+.word-chain-timer.hurry { background: var(--danger, #e0475b); color: #fff; animation: word-chain-pulse 1s ease-in-out infinite; }
+@keyframes word-chain-pulse { 50% { transform: scale(1.08); } }
+@media (prefers-reduced-motion: reduce) { .word-chain-timer.hurry { animation: none; } }
+.word-chain-event { margin: 0; padding: 8px 12px; border-radius: var(--radius); background: var(--surface-2); color: var(--text-2); font-size: 13px; }
+.word-chain-winner { display: flex; align-items: center; gap: 8px; margin: 0; font-size: 15px; }
+.word-chain-winner > svg { color: #e0a800; }
+@media (max-width: 700px) {
+  .word-chain-layout { grid-template-columns: 1fr; }
+  .word-chain-side { grid-row: 1; }
+}
+
 /* ================= Random picker wheel ================= */
 .pick { display: grid; justify-items: start; gap: 6px; margin-top: 4px; }
 .pick-wheel-wrap { position: relative; width: 200px; height: 200px; }

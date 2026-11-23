@@ -242,4 +242,35 @@ export const migrations = [
   CREATE INDEX idx_calendar_events_start ON calendar_events(class_id, starts_at);
   CREATE INDEX idx_calendar_reminders ON calendar_events(reminder_at) WHERE reminder_sent = 0;
   `,
+
+  /* v6 — turn-based Word Chain game */
+  `
+  CREATE TABLE word_chain_games (
+    id          INTEGER PRIMARY KEY,
+    class_id    INTEGER NOT NULL REFERENCES classes(id) ON DELETE CASCADE,
+    channel_id  INTEGER NOT NULL REFERENCES channels(id) ON DELETE CASCADE,
+    message_id  INTEGER REFERENCES messages(id) ON DELETE SET NULL,
+    host_id     INTEGER NOT NULL REFERENCES users(id) ON DELETE CASCADE,
+    status      TEXT NOT NULL CHECK (status IN ('lobby','playing','finished','cancelled')),
+    players     TEXT NOT NULL DEFAULT '[]',
+    chain       TEXT NOT NULL DEFAULT '[]',
+    turn        INTEGER NOT NULL DEFAULT 0,
+    version     INTEGER NOT NULL DEFAULT 0,
+    created_at  INTEGER NOT NULL,
+    updated_at  INTEGER NOT NULL
+  );
+  CREATE INDEX idx_word_chain_message ON word_chain_games(message_id);
+  `,
+
+  /* v7 — Word Chain dictionary language, lives, turn timer and winner */
+  `
+  ALTER TABLE word_chain_games ADD COLUMN language TEXT NOT NULL DEFAULT 'en';
+  ALTER TABLE word_chain_games ADD COLUMN turn_seconds INTEGER NOT NULL DEFAULT 30;
+  ALTER TABLE word_chain_games ADD COLUMN lives TEXT NOT NULL DEFAULT '{}';
+  ALTER TABLE word_chain_games ADD COLUMN out_order TEXT NOT NULL DEFAULT '[]';
+  ALTER TABLE word_chain_games ADD COLUMN turn_deadline INTEGER;
+  ALTER TABLE word_chain_games ADD COLUMN winner_id INTEGER REFERENCES users(id) ON DELETE SET NULL;
+  ALTER TABLE word_chain_games ADD COLUMN last_event TEXT;
+  CREATE INDEX idx_word_chain_deadline ON word_chain_games(turn_deadline) WHERE status = 'playing';
+  `,
 ];

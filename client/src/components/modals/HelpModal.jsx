@@ -1,6 +1,6 @@
 import { useState } from "react";
 import {
-  AtSign, BarChart3, Bot, CalendarDays, Disc3, Gamepad2, Hash, Megaphone, Mic, MoreHorizontal, Paperclip, Pin, Plus, Reply, Search, Shield, Smile, SmilePlus, Swords, Trophy, Users, VenetianMask, Timer, PartyPopper,
+  AtSign, BarChart3, Bot, CalendarDays, Disc3, Gamepad2, Hash, Link2, Megaphone, Mic, MoreHorizontal, Paperclip, Pin, Plus, Reply, Search, Shield, Smile, SmilePlus, Swords, Trophy, Users, VenetianMask, Timer, PartyPopper,
 } from "lucide-react";
 import { isStaffRole, useStore } from "../../store/index.js";
 import { Modal } from "../ui/primitives.jsx";
@@ -139,6 +139,12 @@ const SECTIONS = {
           know the category. Take turns giving short clues (two rounds), then vote for who you think the imposters are. If one is caught,
           they can still win for their team by guessing the word. Start one from the Games button or with <code>/imposter</code> (or <code>/imposter food</code>).
           Classmates who aren't playing can watch live, but they never see the word until the end.
+        </Row>
+        <Row icon={Link2} title="Word Chain">
+          Start a class game from the <Gamepad2 size={14} /> Games button. Join the lobby, then take turns entering a new word that
+          starts with the last letter of the previous word, from the game's English or French word list. Everyone has 3 lives: an
+          unknown, off-letter or repeated word costs one, and so does running out of time. Lose all three and you're out; the last
+          player standing wins. The host or a teacher can finish the game early.
         </Row>
         <Row icon={Timer} title="Countdowns">
           Type <code>/countdown Chemistry exam 2026-12-10</code> (you can add a time, e.g. <code>09:00</code>) to post a live countdown:

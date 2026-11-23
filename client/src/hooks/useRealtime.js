@@ -70,6 +70,15 @@ export function useRealtime() {
     });
     socket.on("imposter:secret", (e) => st().onImposterSecret(e));
     socket.on("imposter:watchers", (e) => st().onImposterWatchers(e));
+    socket.on("word-chain:update", ({ game }) => {
+      const before = st().wordChains[game.id];
+      st().onWordChainUpdate({ game });
+      const me = st().me?.id;
+      const looking = st().modal?.type === "wordChain" && st().modal?.props?.gameId === game.id;
+      if (!looking && game.status === "playing" && game.turnUserId === me && before?.turnUserId !== me) {
+        st().toast("Your turn in Word Chain");
+      }
+    });
     socket.on("calendar:updated", (e) => st().onCalendarUpdated(e));
     socket.on("calendar:reminder", ({ event }) => {
       const message = `${event.title} starts ${new Date(event.startsAt).toLocaleString()}`;

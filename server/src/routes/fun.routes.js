@@ -7,9 +7,9 @@ const id = (v) => {
   return n;
 };
 
-/** Chess, Imposter and class emoji. */
+/** Class games and emoji. */
 export function funRoutes({ services, rt }) {
-  const { chess, imposter, emojis, classes, messages } = services;
+  const { chess, imposter, wordChain, emojis, classes, messages } = services;
   const r = Router();
 
   // ---------- chess ----------
@@ -38,6 +38,35 @@ export function funRoutes({ services, rt }) {
   action("cancel", (g, u) => chess.cancel(g, u));
   action("move", (g, u, body) => chess.move(g, u, body));
   action("resign", (g, u) => chess.resign(g, u));
+
+  // ---------- word chain ----------
+  const pushWordChain = ({ game, channel }) => rt.toChannel(channel, "word-chain:update", { game: wordChain.dto(game) });
+
+  r.post("/channels/:channelId/word-chain", (req, res) => {
+    const { clientId, ...options } = req.body ?? {};
+    const { messageId, channel } = wordChain.create(id(req.params.channelId), req.user.id, options);
+    const message = messages.get(messageId, req.user.id);
+    rt.toChannel(channel, "message:new", { message, clientId });
+    res.status(201).json({ message });
+  });
+
+  r.get("/word-chain/:gameId", (req, res) => {
+    res.json({ game: wordChain.get(id(req.params.gameId), req.user.id) });
+  });
+
+  const wordChainAction = (name, fn) =>
+    r.post(`/word-chain/:gameId/${name}`, (req, res) => {
+      const out = fn(id(req.params.gameId), req.user.id, req.body ?? {});
+      pushWordChain(out);
+      res.json({ game: wordChain.dto(out.game), penalty: out.penalty ?? null });
+    });
+  wordChainAction("join", (g, u) => wordChain.join(g, u));
+  wordChainAction("leave", (g, u) => wordChain.leave(g, u));
+  wordChainAction("start", (g, u) => wordChain.start(g, u));
+  wordChainAction("play", (g, u, body) => wordChain.play(g, u, body));
+  wordChainAction("forfeit", (g, u) => wordChain.forfeit(g, u));
+  wordChainAction("finish", (g, u) => wordChain.finish(g, u));
+  wordChainAction("cancel", (g, u) => wordChain.cancel(g, u));
 
   // ---------- imposter ----------
   // Broadcasts carry only the public view; each participant's secret (role + word) goes to them alone.

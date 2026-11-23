@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useRef, useState } from "react";
-import { BarChart3, Dices, Disc3, FileText, Gamepad2, Mic, Paperclip, SendHorizontal, Smile, Square, Swords, Trash2, Trophy, VenetianMask, X, Reply } from "lucide-react";
+import { BarChart3, Dices, Disc3, FileText, Gamepad2, Link2, Mic, Paperclip, SendHorizontal, Smile, Square, Swords, Trash2, Trophy, VenetianMask, X, Reply } from "lucide-react";
 import { isStaffRole, useStore } from "../../store/index.js";
 import { api } from "../../lib/api.js";
 import { canRecordAudio, imageSize, pickAudioMime } from "../../lib/browser.js";
@@ -434,6 +434,11 @@ export function Composer({ channel, detail }) {
         {channel.kind !== "dm" && (
           <MenuItem icon={VenetianMask} onClick={() => { setGames(null); s().openModal("imposterCreate", { channelId: channel.id }); }}>
             Play Imposter (group game)
+          </MenuItem>
+        )}
+        {channel.kind !== "dm" && (
+          <MenuItem icon={Link2} onClick={() => { setGames(null); s().openModal("wordChainCreate", { channelId: channel.id }); }}>
+            Play Word Chain
           </MenuItem>
         )}
         <MenuItem icon={Disc3} onClick={() => { setGames(null); s().openModal("pick", { channelId: channel.id }); }}>

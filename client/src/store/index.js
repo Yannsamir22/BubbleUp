@@ -53,6 +53,7 @@ export const useStore = create((set, get) => ({
   toasts: [],
   jump: null,
   games: {}, // live chess games by id (from realtime updates)
+  wordChains: {},
   calendarEvents: {},
   imposter: {}, // Imposter games by id: public view only (no word, no imposter)
   imposterMe: {}, // my own secret per Imposter game: { role, word, version }
@@ -140,7 +141,7 @@ export const useStore = create((set, get) => ({
   },
   async logout() {
     await api.post("/auth/logout").catch(() => {});
-    set({ status: "anon", me: null, classes: [], details: {}, messages: {}, ephemeral: {}, modal: null, panel: null, games: {}, calendarEvents: {}, imposter: {}, imposterMe: {}, imposterWatchers: {} });
+    set({ status: "anon", me: null, classes: [], details: {}, messages: {}, ephemeral: {}, modal: null, panel: null, games: {}, wordChains: {}, calendarEvents: {}, imposter: {}, imposterMe: {}, imposterWatchers: {} });
   },
   async updateProfile(patch) {
     const { user } = await api.patch("/me", patch);
@@ -486,6 +487,33 @@ export const useStore = create((set, get) => ({
   },
   onChessUpdate({ game }) {
     set((s) => ({ games: { ...s.games, [game.id]: game } }));
+  },
+
+  async createWordChain(channelId, options = {}) {
+    const { message } = await api.post(`/channels/${channelId}/word-chain`, options);
+    get().onMessageNew({ message });
+    return message;
+  },
+  /** Resolves to the game; a rule-breaking word still succeeds but carries a `penalty` message, shown as a toast. */
+  async wordChainAction(gameId, action, body) {
+    const { game, penalty } = await api.post(`/word-chain/${gameId}/${action}`, body);
+    get().onWordChainUpdate({ game });
+    if (penalty) get().toast(penalty, "error");
+    return { game, penalty };
+  },
+  async loadWordChain(gameId) {
+    const { game } = await api.get(`/word-chain/${gameId}`);
+    get().onWordChainUpdate({ game });
+    return game;
+  },
+  onWordChainUpdate({ game }) {
+    set((s) => {
+      const current = s.wordChains[game.id];
+      if (current && current.version > game.version) return {};
+      // Remember the local/server clock difference so turn timers count down correctly.
+      const clockOffset = game.serverTime ? game.serverTime - Date.now() : 0;
+      return { wordChains: { ...s.wordChains, [game.id]: { ...game, clockOffset } } };
+    });
   },
 
   // ---------------- imposter ----------------

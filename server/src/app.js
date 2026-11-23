@@ -20,6 +20,7 @@ import { createImposterService } from "./services/imposter.js";
 import { createEmojiService } from "./services/emojis.js";
 import { createAwardsService, isoWeek } from "./services/awards.js";
 import { createCalendarService } from "./services/calendar.js";
+import { createWordChainService } from "./services/wordChain.js";
 import { createRealtime } from "./realtime/index.js";
 import { authRoutes } from "./routes/auth.routes.js";
 import { classRoutes } from "./routes/classes.routes.js";
@@ -42,10 +43,12 @@ export function createServer(config, { logger = console, fetchImpl } = {}) {
   messages.extend("chess", chess);
   const imposter = createImposterService(db, { channels, classes, messages });
   messages.extend("imposter", imposter);
+  const wordChain = createWordChainService(db, { channels, messages });
+  messages.extend("wordChain", wordChain);
   const emojis = createEmojiService(db, config, { classes });
   const awards = createAwardsService(db);
   const calendar = createCalendarService(db, { classes });
-  const services = { users, classes, channels, messages, uploads, chess, imposter, emojis, awards, calendar };
+  const services = { users, classes, channels, messages, uploads, chess, imposter, wordChain, emojis, awards, calendar };
   const bot = createBot(db, config, { fetchImpl, awards });
 
   const app = express();
@@ -187,6 +190,21 @@ export function createServer(config, { logger = console, fetchImpl } = {}) {
     }
   });
 
+  /** Word Chain: a player whose turn timer ran out loses a life and the turn moves on. */
+  function expireWordChainTurns(at = Date.now()) {
+    const expired = wordChain.expireTurns(at);
+    for (const { game, channel } of expired) rt.toChannel(channel, "word-chain:update", { game: wordChain.dto(game) });
+    return expired.length;
+  }
+  const wordChainTimer = setInterval(() => {
+    try {
+      expireWordChainTurns();
+    } catch (err) {
+      logger.error("[word-chain]", err);
+    }
+  }, 1000);
+  wordChainTimer.unref();
+
   // Hourly housekeeping: forget uploads that were never sent.
   const cleanup = setInterval(() => {
     try {
@@ -202,11 +220,12 @@ export function createServer(config, { logger = console, fetchImpl } = {}) {
     clearInterval(cleanup);
     clearInterval(countdownTimer);
     clearInterval(calendarTimer);
+    clearInterval(wordChainTimer);
     if (awardsTimer) clearInterval(awardsTimer);
     await rt.close();
     if (server.listening) await new Promise((ok) => server.close(() => ok()));
     db.close();
   }
 
-  return { app, server, db, services, rt, bot, close, postWeeklyAwards, unpinFinishedCountdowns, dispatchCalendarReminders };
+  return { app, server, db, services, rt, bot, close, postWeeklyAwards, unpinFinishedCountdowns, dispatchCalendarReminders, expireWordChainTurns };
 }
